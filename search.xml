@@ -8,7 +8,7 @@
       <link href="/posts/15017.html"/>
       <url>/posts/15017.html</url>
       
-        <content type="html"><![CDATA[<h2 id="Netflix套餐"><a href="#Netflix套餐" class="headerlink" title="Netflix套餐"></a>Netflix套餐</h2><p>Netflix 提供三种流媒体套餐，即基本套餐、标准套餐和高级套餐。套餐决定影片分辨率和同时在线设备数。</p><ul><li><strong>基础套餐</strong> 允许您在一次在一台设备上通过 Netflix 流媒体播放标清 (SD) 格式的电影和电视节目。 订阅此套餐，您还可以在一部手机或平板电脑上下载影片。</li><li><strong>标准套餐</strong> 允许您同时在两台设备上通过 Netflix 流媒体播放高清 (HD) 格式的电影和电视节目（如可用）。 订阅此套餐，您还可以在两部手机或平板电脑上下载影片。</li><li><strong>高级套餐</strong> 允许您同时在四台设备上通过 Netflix 流媒体播放高清 (HD) 和超高清 (UHD) 格式的电影和电视节目（如可用）。 订阅此套餐，您还可以在四部手机或平板电脑上下载影片。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgNetflix%E5%A5%97%E9%A4%90%E5%AF%B9%E6%AF%94.png" alt=""></p><h2 id="大白话时间"><a href="#大白话时间" class="headerlink" title="大白话时间"></a>大白话时间</h2><p>套餐分为三种：基础套餐、标准套餐和高级套餐</p><ul><li>基础套餐  1台设备同时在线  标清画质</li><li>标准套餐  2台设备同时在线  高清画质</li><li>高级套餐  4台设备同时在线  超清画质</li></ul><p>内容引用：<a href="https://help.netflix.com/zh-cn/node/24926" target="_blank" rel="noopener">Netflix帮助中心</a></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="Netflix套餐"><a href="#Netflix套餐" class="headerlink" title="Netflix套餐"></a>Netflix套餐</h3><p>Netflix 提供三种流媒体套餐，即基本套餐、标准套餐和高级套餐。套餐决定影片分辨率和同时在线设备数。</p><ul><li><strong>基础套餐</strong> 允许您在一次在一台设备上通过 Netflix 流媒体播放标清 (SD) 格式的电影和电视节目。 订阅此套餐，您还可以在一部手机或平板电脑上下载影片。</li><li><strong>标准套餐</strong> 允许您同时在两台设备上通过 Netflix 流媒体播放高清 (HD) 格式的电影和电视节目（如可用）。 订阅此套餐，您还可以在两部手机或平板电脑上下载影片。</li><li><strong>高级套餐</strong> 允许您同时在四台设备上通过 Netflix 流媒体播放高清 (HD) 和超高清 (UHD) 格式的电影和电视节目（如可用）。 订阅此套餐，您还可以在四部手机或平板电脑上下载影片。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgNetflix%E5%A5%97%E9%A4%90%E5%AF%B9%E6%AF%94.png" alt=""></p><h3 id="大白话时间"><a href="#大白话时间" class="headerlink" title="大白话时间"></a>大白话时间</h3><p>套餐分为三种：基础套餐、标准套餐和高级套餐</p><ul><li>基础套餐  1台设备同时在线  标清画质</li><li>标准套餐  2台设备同时在线  高清画质</li><li>高级套餐  4台设备同时在线  超清画质</li></ul><p>内容引用：<a href="https://help.netflix.com/zh-cn/node/24926" target="_blank" rel="noopener">Netflix帮助中心</a></p>]]></content>
       
       
       <categories>
@@ -97,9 +97,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 图床 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -114,6 +114,12 @@
       
         <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/2020-newyear.png" alt=""></p>]]></content>
       
+      
+      <categories>
+          
+          <category> 杂记 </category>
+          
+      </categories>
       
       
     </entry>
