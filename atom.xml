@@ -5,9 +5,9 @@
   <subtitle>心怀希望</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://faqus.githu.io/"/>
-  <updated>2020-03-13T13:21:56.116Z</updated>
-  <id>http://faqus.githu.io/</id>
+  <link href="http://faqus.github.io/"/>
+  <updated>2020-04-18T16:45:53.291Z</updated>
+  <id>http://faqus.github.io/</id>
   
   <author>
     <name>乐邪</name>
@@ -17,9 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Netflix修改语言，看完这一篇就会了！</title>
+    <link href="http://faqus.github.io/posts/12746.html"/>
+    <id>http://faqus.github.io/posts/12746.html</id>
+    <published>2020-04-18T15:32:56.000Z</published>
+    <updated>2020-04-18T16:45:53.291Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ol><li>介绍手机改语言</li><li>介绍电脑改语言</li></ol><h3 id="手机修改语言"><a href="#手机修改语言" class="headerlink" title="手机修改语言"></a>手机修改语言</h3><p>首先，手机APP是无法修改语言的，需要使用浏览器登录才可以修改！！！</p><ol><li><a href="http://www.netflix.com" target="_blank" rel="noopener">www.netflix.com</a>  登录账户</li><li>点击菜单</li><li>account/账户</li><li>对应角色，language change</li><li>save/保存即可</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgmobile-change-language.jpg" alt=""></p><h3 id="电脑端修改语言"><a href="#电脑端修改语言" class="headerlink" title="电脑端修改语言"></a>电脑端修改语言</h3><ol><li><a href="http://www.netflix.com" target="_blank" rel="noopener">www.netflix.com</a> 登录</li><li>MANAGE PROFILES/管理个人资料</li><li>修改对应语言</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix0011.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-2.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-3.jpg" alt=""></p><hr><p>如果已经登录上去了，可以直接在账户里修改。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-5.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-6.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-7.jpg" alt=""></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>如果你有Netflix账号的需要，可以联系我vx:vamilk3344</p>]]></content>
+    
+    <summary type="html">
+    
+      同一个地球，带你走进Netflix修改语言
+    
+    </summary>
+    
+    
+      <category term="流媒体" scheme="http://FAQUS.github.io/categories/%E6%B5%81%E5%AA%92%E4%BD%93/"/>
+    
+    
+      <category term="Netflix" scheme="http://FAQUS.github.io/tags/Netflix/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Netflix提供三种流媒体套餐供你选择</title>
-    <link href="http://faqus.githu.io/posts/15017.html"/>
-    <id>http://faqus.githu.io/posts/15017.html</id>
+    <link href="http://faqus.github.io/posts/15017.html"/>
+    <id>http://faqus.github.io/posts/15017.html</id>
     <published>2020-03-13T12:44:43.000Z</published>
     <updated>2020-03-13T13:21:56.116Z</updated>
     
@@ -32,17 +55,17 @@
     </summary>
     
     
-      <category term="流媒体" scheme="http://FAQUS.githu.io/categories/%E6%B5%81%E5%AA%92%E4%BD%93/"/>
+      <category term="流媒体" scheme="http://FAQUS.github.io/categories/%E6%B5%81%E5%AA%92%E4%BD%93/"/>
     
     
-      <category term="Netflix" scheme="http://FAQUS.githu.io/tags/Netflix/"/>
+      <category term="Netflix" scheme="http://FAQUS.github.io/tags/Netflix/"/>
     
   </entry>
   
   <entry>
     <title>PicGO配置GitHub图床</title>
-    <link href="http://faqus.githu.io/posts/51419.html"/>
-    <id>http://faqus.githu.io/posts/51419.html</id>
+    <link href="http://faqus.github.io/posts/51419.html"/>
+    <id>http://faqus.github.io/posts/51419.html</id>
     <published>2020-01-17T03:16:03.000Z</published>
     <updated>2020-02-26T03:10:23.271Z</updated>
     
@@ -55,19 +78,19 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://FAQUS.githu.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://FAQUS.github.io/categories/Hexo/"/>
     
     
-      <category term="图床" scheme="http://FAQUS.githu.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+      <category term="图床" scheme="http://FAQUS.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
     
-      <category term="PicGO" scheme="http://FAQUS.githu.io/tags/PicGO/"/>
+      <category term="PicGO" scheme="http://FAQUS.github.io/tags/PicGO/"/>
     
   </entry>
   
   <entry>
     <title>GitHub创建Personal access tokens(个人访问命令)</title>
-    <link href="http://faqus.githu.io/posts/8824.html"/>
-    <id>http://faqus.githu.io/posts/8824.html</id>
+    <link href="http://faqus.github.io/posts/8824.html"/>
+    <id>http://faqus.github.io/posts/8824.html</id>
     <published>2020-01-17T02:47:03.000Z</published>
     <updated>2020-02-26T03:10:23.267Z</updated>
     
@@ -80,21 +103,21 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://FAQUS.githu.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://FAQUS.github.io/categories/Hexo/"/>
     
     
-      <category term="GitHub" scheme="http://FAQUS.githu.io/tags/GitHub/"/>
+      <category term="GitHub" scheme="http://FAQUS.github.io/tags/GitHub/"/>
     
   </entry>
   
   <entry>
     <title>一款高效且免费的图床</title>
-    <link href="http://faqus.githu.io/posts/5677.html"/>
-    <id>http://faqus.githu.io/posts/5677.html</id>
+    <link href="http://faqus.github.io/posts/5677.html"/>
+    <id>http://faqus.github.io/posts/5677.html</id>
     <published>2020-01-16T08:42:07.000Z</published>
     <updated>2020-02-26T03:10:23.277Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近这段时间，搭建了这个博客。</p><p>搭建和使用期间用到的一些工具，我觉得有些工具挺好用的，给大家介绍其中一套组合拳。</p><p>用GitHub+<a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsDelivr</a>+<a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">PicGO</a>搭建一个免费高效图床解决方案。</p><h3 id="jsDelivr"><a href="#jsDelivr" class="headerlink" title="jsDelivr"></a>jsDelivr</h3><p>官方介绍：开源免费的CDN，免费、高效且稳定。<a href="https://www.jsdelivr.com" target="_blank" rel="noopener">jsDelivr官网地址</a></p><blockquote><p>Open Source CDN</p><p>free, fast, and reliable</p></blockquote><h3 id="PicGO"><a href="#PicGO" class="headerlink" title="PicGO"></a>PicGO</h3><p>PicGO GitHub项目地址：<a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">PicGO访问地址</a></p><p>功能很强大的图片上传和图片管理软件，支持的图床也很全面</p><blockquote><ul><li>图床 v1.0 <strong>微博图床从 2019 年 4 月开始进行防盗链，不建议继续使用</strong></li><li>七牛图床v1.0</li><li>腾讯云 COS v4\v5版本 v1.1 &amp; v1.5.0</li><li>又拍云 v1.2.0</li><li>GitHub v1.5.0</li><li>SM.MS v1.5.1</li><li>阿里云 OSS v1.6.0</li><li>Imgur v1.6.0</li></ul></blockquote><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><p>参考下面两个文章即可：</p><p>如何在PicGO上配置GitHub图片： <a href="https://faqus.github.io/posts/51419.html" target="_blank" rel="noopener">https://faqus.github.io/posts/51419.html</a></p><p>GitHub 创建Personal access tokens: ： <a href="https://faqus.github.io/posts/8824.html" target="_blank" rel="noopener">https://faqus.github.io/posts/8824.html</a></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近这段时间，搭建了这个博客。</p><p>搭建和使用期间用到的一些工具，我觉得有些工具挺好用的，给大家介绍其中一套组合拳。</p><p>用GitHub+<a href="https://www.jsdelivr.com/" target="_blank" rel="noopener">jsDelivr</a>+<a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">PicGO</a>搭建一个免费高效图床解决方案。</p><h3 id="jsDelivr"><a href="#jsDelivr" class="headerlink" title="jsDelivr"></a>jsDelivr</h3><p>官方介绍：开源免费的CDN，免费、高效且稳定。<a href="https://www.jsdelivr.com" target="_blank" rel="noopener">jsDelivr官网地址</a></p><blockquote><p>Open Source CDN</p><p>free, fast, and reliable</p></blockquote><h3 id="PicGO"><a href="#PicGO" class="headerlink" title="PicGO"></a>PicGO</h3><p>PicGO GitHub项目地址：<a href="https://github.com/Molunerfinn/PicGo" target="_blank" rel="noopener">PicGO访问地址</a></p><p>功能很强大的图片上传和图片管理软件，支持的图床也很全面</p><blockquote><ul><li>图床 v1.0 <strong>微博图床从 2019 年 4 月开始进行防盗链，不建议继续使用</strong></li><li>七牛图床v1.0</li><li>腾讯云 COS v4\v5版本 v1.1 &amp; v1.5.0</li><li>又拍云 v1.2.0</li><li>GitHub v1.5.0</li><li>SM.MS v1.5.1</li><li>阿里云 OSS v1.6.0</li><li>Imgur v1.6.0</li></ul></blockquote><h2 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h2><p>参考下面两个文章即可：</p><p>如何在PicGO上配置GitHub图片： <a href="https://faqus.github.io/posts/51419.html">https://faqus.github.io/posts/51419.html</a></p><p>GitHub 创建Personal access tokens: ： <a href="https://faqus.github.io/posts/8824.html">https://faqus.github.io/posts/8824.html</a></p>]]></content>
     
     <summary type="html">
     
@@ -103,19 +126,19 @@
     </summary>
     
     
-      <category term="Hexo" scheme="http://FAQUS.githu.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://FAQUS.github.io/categories/Hexo/"/>
     
     
-      <category term="hexo" scheme="http://FAQUS.githu.io/tags/hexo/"/>
+      <category term="图床" scheme="http://FAQUS.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
     
-      <category term="图床" scheme="http://FAQUS.githu.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+      <category term="hexo" scheme="http://FAQUS.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>2020年，新的开始</title>
-    <link href="http://faqus.githu.io/posts/e6a8ef22.html"/>
-    <id>http://faqus.githu.io/posts/e6a8ef22.html</id>
+    <link href="http://faqus.github.io/posts/e6a8ef22.html"/>
+    <id>http://faqus.github.io/posts/e6a8ef22.html</id>
     <published>2020-01-16T05:33:49.000Z</published>
     <updated>2020-02-26T03:10:23.282Z</updated>
     
@@ -128,7 +151,7 @@
     </summary>
     
     
-      <category term="杂记" scheme="http://FAQUS.githu.io/categories/%E6%9D%82%E8%AE%B0/"/>
+      <category term="杂记" scheme="http://FAQUS.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
     
     
   </entry>
