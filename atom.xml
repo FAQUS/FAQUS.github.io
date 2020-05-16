@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://faqus.github.io/"/>
-  <updated>2020-04-18T16:45:53.291Z</updated>
+  <updated>2020-05-12T11:59:52.179Z</updated>
   <id>http://faqus.github.io/</id>
   
   <author>
@@ -17,13 +17,82 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Netflix转区教程</title>
+    <link href="http://faqus.github.io/posts/54926.html"/>
+    <id>http://faqus.github.io/posts/54926.html</id>
+    <published>2020-04-26T10:30:19.000Z</published>
+    <updated>2020-05-12T11:59:52.179Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>很多朋友在美区开了Netflix试用一个月，到需要付费的时候，想换一个性价比高一点的区，结果不知道如何操作。今天来介绍一下Netflix换区操作，我就拿美区换土耳其地区举例子。</p><h3 id="换区操作"><a href="#换区操作" class="headerlink" title="换区操作"></a>换区操作</h3><p>首先需要你的会员到期，提前取消会员是不可以换区的。<br>提前取消会员，如果你的会员还没到期，你依然可以观看，并不影响你的观看。</p><h4 id="美区登陆"><a href="#美区登陆" class="headerlink" title="美区登陆"></a>美区登陆</h4><p>我这里账号是美区，所以我先美区登陆。<br>如果你已经提前取消会员了，可以跳过这一步。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Netflix-meiqu.png" alt=""></p><h4 id="土区登陆"><a href="#土区登陆" class="headerlink" title="土区登陆"></a>土区登陆</h4><p>账号会员到期，并且已经取消会员了。我们就可以土耳其地区登陆。</p><p>这部分操作和新注册会员没有区别，就是重新启用会员资格，选择支付方式。</p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>转区最关键在于你的账号提前取消会员，到期再进行转区操作。</p><p>Netflix系列文章：</p><ol><li>Netflix 扫盲篇    <a href="https://faqus.github.io/posts/47102.html">https://faqus.github.io/posts/47102.html</a></li><li>Netflix修改语言问题    <a href="https://faqus.github.io/posts/12746.html">https://faqus.github.io/posts/12746.html</a></li><li>Netflix套餐问题    <a href="https://faqus.github.io/posts/15017.html">https://faqus.github.io/posts/15017.html</a>  </li><li>Netflix线路问题和分辨率问题    <a href="https://faqus.github.io/posts/62104.html">https://faqus.github.io/posts/62104.html</a></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      Netflix转区问题
+    
+    </summary>
+    
+    
+      <category term="流媒体" scheme="http://FAQUS.github.io/categories/%E6%B5%81%E5%AA%92%E4%BD%93/"/>
+    
+    
+      <category term="Netflix" scheme="http://FAQUS.github.io/tags/Netflix/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Netflix 代理问题和分辨率问题</title>
+    <link href="http://faqus.github.io/posts/62104.html"/>
+    <id>http://faqus.github.io/posts/62104.html</id>
+    <published>2020-04-26T09:39:52.000Z</published>
+    <updated>2020-05-12T11:59:52.163Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Netflix线路问题"><a href="#Netflix线路问题" class="headerlink" title="Netflix线路问题"></a>Netflix线路问题</h3><p>很多人买到或者拿到账号，登陆观看Netflix经常会遇到这样一个问题。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/netflix-proxy.png" alt=""></p><p>以下为Netflix官方回答：</p><blockquote><p>这表示我们的系统检测到您正在使用 VPN、代理或“解锁工具”服务进行连接。 由于我们的内容库因地区而异，而且上述连接类型常被用于规避地理定位方法，因此您使用这些连接方式时将无法进行流媒体播放。</p></blockquote><p>解决这个问题的方式，一般分为两个途径</p><ol><li>更换节点</li><li>通过更改DNS来提供解锁Netflix服务。该方式成本比较高，不太推荐。</li></ol><h3 id="Netflix分辨率"><a href="#Netflix分辨率" class="headerlink" title="Netflix分辨率"></a>Netflix分辨率</h3><p>许多人反应，观看Netflix分辨率好低的。如何调整分辨率。</p><p>首先，Netflix的分辨率是不能手动调节的（之前出过一个1080Netflix插件，目前也不知是否可用，本人是不推荐使用该方式的）</p><p>首先我们来看一下Netflix官网是怎么说的：<a href="https://help.netflix.com/zh-cn/node/11559" target="_blank" rel="noopener">https://help.netflix.com/zh-cn/node/11559</a></p><ol><li>是否是最高级套餐</li><li>确保网络连接支持流媒体播放高清内容</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Netflix-gaoqing.png" alt=""></p><h3 id="Netflix观看流量问题"><a href="#Netflix观看流量问题" class="headerlink" title="Netflix观看流量问题"></a>Netflix观看流量问题</h3><p>消耗情况大致如下，图片来源于Netflix官方</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Netflix-liuliang.png" alt=""></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>Netflix系列文章，需要的可以看一下。</p><p>1.Netflix 扫盲篇   <a href="https://faqus.github.io/posts/47102.html">https://faqus.github.io/posts/47102.html</a><br>2.Netflix修改语言问题   <a href="https://faqus.github.io/posts/12746.html">https://faqus.github.io/posts/12746.html</a><br>3.Netflix套餐问题    <a href="https://faqus.github.io/posts/15017.html">https://faqus.github.io/posts/15017.html</a>  </p>]]></content>
+    
+    <summary type="html">
+    
+      Netflix观看线路问题
+    
+    </summary>
+    
+    
+      <category term="流媒体" scheme="http://FAQUS.github.io/categories/%E6%B5%81%E5%AA%92%E4%BD%93/"/>
+    
+    
+      <category term="Netflix" scheme="http://FAQUS.github.io/tags/Netflix/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Netflix扫盲篇，保姆级新手课堂</title>
+    <link href="http://faqus.github.io/posts/47102.html"/>
+    <id>http://faqus.github.io/posts/47102.html</id>
+    <published>2020-04-26T07:17:28.000Z</published>
+    <updated>2020-05-12T11:59:52.163Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Netflix知识普及"><a href="#Netflix知识普及" class="headerlink" title="Netflix知识普及"></a>Netflix知识普及</h3><h4 id="Netflix简介"><a href="#Netflix简介" class="headerlink" title="Netflix简介"></a>Netflix简介</h4><blockquote><p>美国当地时间 4 月 21 日，Netflix 公布了 2019 年第一季度财报。财报显示，本季度 Netflix 新增 1600 万付费订阅用户，创下历史记录。到 3 月末，Netflix 全球订阅用户数已经突破 1.8 亿。</p></blockquote><blockquote><p><strong>奈飞</strong>（英语：Netflix（<a href="https://zh.wikipedia.org/wiki/Help:英語國際音標" target="_blank" rel="noopener">/ˈnɛtflɪks/</a>），繁体中文名：<strong>网飞</strong>）是起源于<a href="https://zh.wikipedia.org/wiki/美國" target="_blank" rel="noopener">美国</a>、在<a href="https://zh.wikipedia.org/wiki/跨國公司" target="_blank" rel="noopener">多国</a>提供网络<a href="https://zh.wikipedia.org/wiki/视频点播" target="_blank" rel="noopener">视频点播</a>的<a href="https://zh.wikipedia.org/wiki/OTT服务" target="_blank" rel="noopener">OTT服务</a>公司<a href="https://zh.wikipedia.org/wiki/Netflix#cite_note-5" target="_blank" rel="noopener">[5]</a>，并同时在美国国内经营<a href="https://zh.wikipedia.org/wiki/單一費率" target="_blank" rel="noopener">单一费率</a>邮寄DVD出租服务，后者是使用<a href="https://zh.wikipedia.org/w/index.php?title=回郵信封&action=edit&redlink=1" target="_blank" rel="noopener">回邮信封</a>寄送<a href="https://zh.wikipedia.org/wiki/DVD" target="_blank" rel="noopener">DVD</a>和<a href="https://zh.wikipedia.org/wiki/Blu-ray" target="_blank" rel="noopener">Blu-ray</a>出租光盘至消费者指定的收件地址。公司由<a href="https://zh.wikipedia.org/wiki/里德·哈斯廷斯" target="_blank" rel="noopener">里德·哈斯廷斯</a>和<a href="https://zh.wikipedia.org/w/index.php?title=馬爾克·蘭多夫&action=edit&redlink=1" target="_blank" rel="noopener">马尔克·兰多夫</a>在1997年8月29日成立，总部位于<a href="https://zh.wikipedia.org/wiki/加利福尼亚州" target="_blank" rel="noopener">加利福尼亚州</a>的<a href="https://zh.wikipedia.org/wiki/洛斯盖图" target="_blank" rel="noopener">洛斯盖图</a>，1999年开始推出订阅制的服务。到了2009年，奈飞已可提供超过10万部电影<a href="https://zh.wikipedia.org/wiki/DVD" target="_blank" rel="noopener">DVD</a>，订阅者数超过1000万人<a href="https://zh.wikipedia.org/wiki/Netflix#cite_note-6" target="_blank" rel="noopener">[6]</a>。如今，奈飞在流媒体平台上已是世界数一数二的佼佼者，主要的竞争对手有<a href="https://zh.wikipedia.org/wiki/HBO" target="_blank" rel="noopener">HBO</a>、<a href="https://zh.wikipedia.org/wiki/亞馬遜影片" target="_blank" rel="noopener">亚马逊视频</a>、<a href="https://zh.wikipedia.org/wiki/Disney%2B" target="_blank" rel="noopener">Disney+</a>、<a href="https://zh.wikipedia.org/wiki/YouTube" target="_blank" rel="noopener">YouTube</a>、<a href="https://zh.wikipedia.org/wiki/Apple_TV%2B" target="_blank" rel="noopener">Apple TV+</a>及<a href="https://zh.wikipedia.org/wiki/AT%26T" target="_blank" rel="noopener">AT&amp;T</a>。</p></blockquote><p>上述内容来源于网上新闻和维基百科，参考一下。<br>简单一句话：国内爱奇艺or 国内腾讯视频 or 国内优酷</p><h4 id="Netflix支持的地区"><a href="#Netflix支持的地区" class="headerlink" title="Netflix支持的地区"></a>Netflix支持的地区</h4><p>Netflix会员可在190多个国家/地区即时观看电影和电视节目。可供流媒体播放的内容可能会因地区而异，并随时变化。<br><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Netflix-Country.png" alt=""></p><p>【注意】<strong>Netflix目前还未在中国推出，所以我们要观看Netflix还需要借助科学上网</strong>。</p><h4 id="Netflix订阅"><a href="#Netflix订阅" class="headerlink" title="Netflix订阅"></a>Netflix订阅</h4><p>Netflix实施订阅制，绑定信用卡、移动支付和礼品卡，每月自动扣费。套餐等级一般分为三种。</p><p>一般国内发行的Visa和MasterCard大多数可以绑定支付的，支付时Netflix会扣除1美元验证此卡的有效性。</p><p>具体可以参考：<a href="https://faqus.github.io/posts/15017.html">Netflix套餐介绍</a>  </p><p>Netflix支持的付费方式</p><ul><li>信用卡和借记卡</li><li>预付卡</li><li>礼品卡（Netflix线下合作零售商购买）</li><li>PayPal(不同国家，支持的支付钱包不一样）</li></ul><h4 id="Netflix新账号注册"><a href="#Netflix新账号注册" class="headerlink" title="Netflix新账号注册"></a>Netflix新账号注册</h4><p>新账号第一次注册Netflix，注册时所用IP直接决定了该账号所属区域。</p><p>【问题】账号ip和账号区域关系？</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">新账号第一次注册所使用的IP，决定了该账号属于哪个区。</span><br><span class="line">比如：你用美国IP注册Netflix账号，那么该账号就属于美区。</span><br></pre></td></tr></table></figure><p>【问题】账号换区问题？</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">账号转区问题，简单步骤</span><br><span class="line">你账号会员是否到期？如果到期，直接使用新区IP，重启会员资格，付费即可。</span><br><span class="line">会员没有到期，是不可以转区的。</span><br><span class="line">后期我专门出一个文章来说明这件事情。https:&#x2F;&#x2F;faqus.github.io&#x2F;posts&#x2F;54926.html</span><br></pre></td></tr></table></figure><p>【问题】账号观看片源问题？</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">片源问题直接取决于你的登陆IP。登陆IP美国IP，你可以观看的美区片源。</span><br><span class="line">片源多少，可以在该网站查看：http:&#x2F;&#x2F;unogs.com&#x2F;。该网站支持查询某一片源哪些国家可以观看。</span><br></pre></td></tr></table></figure><p>【问题】中文字幕问题？</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">香港、新加坡、台湾、马来西亚均支持中文字幕。推荐新加坡。</span><br></pre></td></tr></table></figure><p>【问题】我的节点是否支持观看Netflix？</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这个问题可以参考我的另一篇文章</span><br><span class="line">https:&#x2F;&#x2F;faqus.github.io&#x2F;posts&#x2F;62104.html</span><br></pre></td></tr></table></figure><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>本篇文章将持续更新，关于观看Netflix遇到什么问题，我们可以交流。vx：vamilk3344，备注Netflix即可。</p><p>系列文章参考：</p><p>1.Netflix 扫盲篇    <a href="https://faqus.github.io/posts/47102.html">https://faqus.github.io/posts/47102.html</a><br>2.Netflix修改语言问题    <a href="https://faqus.github.io/posts/12746.html">https://faqus.github.io/posts/12746.html</a><br>3.Netflix套餐问题     <a href="https://faqus.github.io/posts/15017.html">https://faqus.github.io/posts/15017.html</a><br>4.Netflix线路问题和分辨率问题      <a href="https://faqus.github.io/posts/62104.html">https://faqus.github.io/posts/62104.html</a><br>5.Netflix转区教程     <a href="https://faqus.github.io/posts/54926.html">https://faqus.github.io/posts/54926.html</a> </p>]]></content>
+    
+    <summary type="html">
+    
+      Netflix基础知识扫盲
+    
+    </summary>
+    
+    
+      <category term="流媒体" scheme="http://FAQUS.github.io/categories/%E6%B5%81%E5%AA%92%E4%BD%93/"/>
+    
+    
+      <category term="Netflix" scheme="http://FAQUS.github.io/tags/Netflix/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Netflix修改语言，看完这一篇就会了！</title>
     <link href="http://faqus.github.io/posts/12746.html"/>
     <id>http://faqus.github.io/posts/12746.html</id>
     <published>2020-04-18T15:32:56.000Z</published>
-    <updated>2020-04-18T16:45:53.291Z</updated>
+    <updated>2020-05-12T11:59:52.179Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ol><li>介绍手机改语言</li><li>介绍电脑改语言</li></ol><h3 id="手机修改语言"><a href="#手机修改语言" class="headerlink" title="手机修改语言"></a>手机修改语言</h3><p>首先，手机APP是无法修改语言的，需要使用浏览器登录才可以修改！！！</p><ol><li><a href="http://www.netflix.com" target="_blank" rel="noopener">www.netflix.com</a>  登录账户</li><li>点击菜单</li><li>account/账户</li><li>对应角色，language change</li><li>save/保存即可</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgmobile-change-language.jpg" alt=""></p><h3 id="电脑端修改语言"><a href="#电脑端修改语言" class="headerlink" title="电脑端修改语言"></a>电脑端修改语言</h3><ol><li><a href="http://www.netflix.com" target="_blank" rel="noopener">www.netflix.com</a> 登录</li><li>MANAGE PROFILES/管理个人资料</li><li>修改对应语言</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix0011.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-2.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-3.jpg" alt=""></p><hr><p>如果已经登录上去了，可以直接在账户里修改。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-5.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-6.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgnetflix1-7.jpg" alt=""></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>如果你有Netflix账号的需要，可以联系我vx:vamilk3344</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ol><li>介绍手机改语言</li><li>介绍电脑改语言</li></ol><h3 id="手机修改语言"><a href="#手机修改语言" class="headerlink" title="手机修改语言"></a>手机修改语言</h3><p>首先，手机APP是无法修改语言的，需要使用浏览器登录才可以修改！！！</p><ol><li><a href="http://www.netflix.com" target="_blank" rel="noopener">www.netflix.com</a>  登录账户</li><li>点击菜单</li><li>account/账户</li><li>对应角色，language change</li><li>save/保存即可</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/mobile-change-language.jpg" alt=""></p><h3 id="电脑端修改语言"><a href="#电脑端修改语言" class="headerlink" title="电脑端修改语言"></a>电脑端修改语言</h3><ol><li><a href="http://www.netflix.com" target="_blank" rel="noopener">www.netflix.com</a> 登录</li><li>MANAGE PROFILES/管理个人资料</li><li>修改对应语言</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/netflix0011.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/netflix1-2.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/netflix1-3.jpg" alt=""></p><hr><p>如果已经登录上去了，可以直接在账户里修改。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/netflix1-5.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/netflix1-6.jpg" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/netflix1-7.jpg" alt=""></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>如果你有Netflix账号的需要，可以联系我vx:vamilk3344</p>]]></content>
     
     <summary type="html">
     
@@ -44,9 +113,9 @@
     <link href="http://faqus.github.io/posts/15017.html"/>
     <id>http://faqus.github.io/posts/15017.html</id>
     <published>2020-03-13T12:44:43.000Z</published>
-    <updated>2020-03-13T13:21:56.116Z</updated>
+    <updated>2020-05-12T11:59:52.163Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="Netflix套餐"><a href="#Netflix套餐" class="headerlink" title="Netflix套餐"></a>Netflix套餐</h3><p>Netflix 提供三种流媒体套餐，即基本套餐、标准套餐和高级套餐。套餐决定影片分辨率和同时在线设备数。</p><ul><li><strong>基础套餐</strong> 允许您在一次在一台设备上通过 Netflix 流媒体播放标清 (SD) 格式的电影和电视节目。 订阅此套餐，您还可以在一部手机或平板电脑上下载影片。</li><li><strong>标准套餐</strong> 允许您同时在两台设备上通过 Netflix 流媒体播放高清 (HD) 格式的电影和电视节目（如可用）。 订阅此套餐，您还可以在两部手机或平板电脑上下载影片。</li><li><strong>高级套餐</strong> 允许您同时在四台设备上通过 Netflix 流媒体播放高清 (HD) 和超高清 (UHD) 格式的电影和电视节目（如可用）。 订阅此套餐，您还可以在四部手机或平板电脑上下载影片。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/imgNetflix%E5%A5%97%E9%A4%90%E5%AF%B9%E6%AF%94.png" alt=""></p><h3 id="大白话时间"><a href="#大白话时间" class="headerlink" title="大白话时间"></a>大白话时间</h3><p>套餐分为三种：基础套餐、标准套餐和高级套餐</p><ul><li>基础套餐  1台设备同时在线  标清画质</li><li>标准套餐  2台设备同时在线  高清画质</li><li>高级套餐  4台设备同时在线  超清画质</li></ul><p>内容引用：<a href="https://help.netflix.com/zh-cn/node/24926" target="_blank" rel="noopener">Netflix帮助中心</a></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="Netflix套餐"><a href="#Netflix套餐" class="headerlink" title="Netflix套餐"></a>Netflix套餐</h3><p>Netflix 提供三种流媒体套餐，即基本套餐、标准套餐和高级套餐。套餐决定影片分辨率和同时在线设备数。</p><ul><li><strong>基础套餐</strong> 允许您在一次在一台设备上通过 Netflix 流媒体播放标清 (SD) 格式的电影和电视节目。 订阅此套餐，您还可以在一部手机或平板电脑上下载影片。</li><li><strong>标准套餐</strong> 允许您同时在两台设备上通过 Netflix 流媒体播放高清 (HD) 格式的电影和电视节目（如可用）。 订阅此套餐，您还可以在两部手机或平板电脑上下载影片。</li><li><strong>高级套餐</strong> 允许您同时在四台设备上通过 Netflix 流媒体播放高清 (HD) 和超高清 (UHD) 格式的电影和电视节目（如可用）。 订阅此套餐，您还可以在四部手机或平板电脑上下载影片。</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Netflix%E5%A5%97%E9%A4%90%E5%AF%B9%E6%AF%94.png" alt=""></p><h3 id="大白话时间"><a href="#大白话时间" class="headerlink" title="大白话时间"></a>大白话时间</h3><p>套餐分为三种：基础套餐、标准套餐和高级套餐</p><ul><li>基础套餐  1台设备同时在线  标清画质</li><li>标准套餐  2台设备同时在线  高清画质</li><li>高级套餐  4台设备同时在线  超清画质</li></ul><p>内容引用：<a href="https://help.netflix.com/zh-cn/node/24926" target="_blank" rel="noopener">Netflix帮助中心</a></p>]]></content>
     
     <summary type="html">
     
@@ -140,9 +209,9 @@
     <link href="http://faqus.github.io/posts/e6a8ef22.html"/>
     <id>http://faqus.github.io/posts/e6a8ef22.html</id>
     <published>2020-01-16T05:33:49.000Z</published>
-    <updated>2020-02-26T03:10:23.282Z</updated>
+    <updated>2020-05-16T13:12:35.175Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/2020-newyear.png" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/2020-newyear.png" alt=""></p><p>2020年，新年！</p>]]></content>
     
     <summary type="html">
     
