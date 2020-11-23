@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>2020-11-19-Scanner</title>
+      <link href="/posts/40689.html"/>
+      <url>/posts/40689.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Scanner"><a href="#Scanner" class="headerlink" title="Scanner"></a>Scanner</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Scanner 是JDK 5的新特性</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ScannerDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        System.out.println(<span class="string">"使用next方法接受："</span>);</span><br><span class="line">        <span class="keyword">if</span>(scanner.hasNext())&#123;</span><br><span class="line">            String next = scanner.next();</span><br><span class="line">            System.out.println(next);</span><br><span class="line">        &#125;</span><br><span class="line">        scanner.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>注意事项：</p><p>Scanner 是属于IO流，如果不关闭会一直占用资源，要关闭流资源。</p><p>两个方法</p><p> <code>next()</code></p><ol><li>对于输入的有效字符之前遇到的空白，next()方法会自动将其去掉。</li><li>next() 不能得到带有空格的字符串</li></ol><p><code>nextLine()</code></p><ol><li>netxtLine()是正对换行的。</li></ol><h2 id="其他用法"><a href="#其他用法" class="headerlink" title="其他用法"></a>其他用法</h2><ul><li><code>nextInt</code></li><li><code>nextFloat</code></li><li><code>nextDouble</code></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2020-11-Markdown练习</title>
       <link href="/posts/46868.html"/>
       <url>/posts/46868.html</url>
