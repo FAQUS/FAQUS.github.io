@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://faqus.github.io/"/>
-  <updated>2020-11-30T14:09:26.803Z</updated>
+  <updated>2020-11-30T16:02:34.803Z</updated>
   <id>http://faqus.github.io/</id>
   
   <author>
@@ -17,13 +17,59 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>狂神说Java学习</title>
+    <title>2020-12-01-面向对象</title>
+    <link href="http://faqus.github.io/posts/29955.html"/>
+    <id>http://faqus.github.io/posts/29955.html</id>
+    <published>2020-11-30T15:52:50.324Z</published>
+    <updated>2020-11-30T16:02:34.803Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h2><p>面向对象的本质：<strong>以类的方式组织代码，以对象的组织(封装)数据</strong> </p><h3 id="方法回顾"><a href="#方法回顾" class="headerlink" title="方法回顾"></a>方法回顾</h3><h3 id="对象的创建分析"><a href="#对象的创建分析" class="headerlink" title="对象的创建分析"></a>对象的创建分析</h3><h3 id="面向对象三大特征"><a href="#面向对象三大特征" class="headerlink" title="面向对象三大特征"></a>面向对象三大特征</h3><ul><li>封装</li><li>继承</li><li>多态</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;面向对象&quot;&gt;&lt;a href=&quot;#面向对象&quot; class=&quot;headerlink&quot; title=&quot;面向对象&quot;&gt;&lt;/a&gt;面向对象&lt;/h2&gt;&lt;p&gt;面向对象的本质：&lt;strong&gt;以类的方式组织代码，以对象的组织(封装)数据&lt;/strong&gt; &lt;/p&gt;
+&lt;h3 id=&quot;方
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2020-11-30-冒泡排序</title>
+    <link href="http://faqus.github.io/posts/36628.html"/>
+    <id>http://faqus.github.io/posts/36628.html</id>
+    <published>2020-11-30T15:15:42.510Z</published>
+    <updated>2020-11-30T15:30:49.189Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><p>代码</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayDemo04</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[] a = &#123;<span class="number">1</span>,<span class="number">23</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8899</span>,<span class="number">23213</span>,<span class="number">12312</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span>[] sort = sort(a);</span><br><span class="line">        System.out.println(Arrays.toString(a));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 比较数组中的两个相邻的元素</span></span><br><span class="line"><span class="comment">     * 如果第一个数比第二个数比较，就交换他们的位置</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] sort(<span class="keyword">int</span>[] array)&#123;</span><br><span class="line">        <span class="keyword">int</span> temp = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 确定循环几次</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length-<span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="comment">// 内层循环比较两个数，如果第一个数比第二数大，交换位置</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; array.length-<span class="number">1</span>-i; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(array[j+<span class="number">1</span>]&lt;array[j])&#123;</span><br><span class="line">                    temp = array[j];</span><br><span class="line">                    array[j] = array[j+<span class="number">1</span>];</span><br><span class="line">                    array[j+<span class="number">1</span>] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> array;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>时间复杂度O（n^2）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;冒泡排序&quot;&gt;&lt;a href=&quot;#冒泡排序&quot; class=&quot;headerlink&quot; title=&quot;冒泡排序&quot;&gt;&lt;/a&gt;冒泡排序&lt;/h2&gt;&lt;p&gt;代码&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gu
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2020-11-30-数组</title>
     <link href="http://faqus.github.io/posts/24839.html"/>
     <id>http://faqus.github.io/posts/24839.html</id>
     <published>2020-11-25T13:45:25.345Z</published>
-    <updated>2020-11-30T14:09:26.803Z</updated>
+    <updated>2020-11-30T15:51:22.723Z</updated>
     
-    <content type="html"><![CDATA[<p>2020年11月25日21:45:38</p><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>数组的概念：</p><p>一组数。相同类型数据的有序集合；每个数组元素可以通过下标来访问。</p><p>数组定义：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] nums; <span class="comment">// 声明一个数组</span></span><br><span class="line">nums = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>]; <span class="comment">// 这里面可以存放int类型的数字 </span></span><br><span class="line"><span class="comment">// 给数组元素赋值</span></span><br><span class="line">nums[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">nums[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="comment">// 获取数组的长度</span></span><br><span class="line"><span class="keyword">int</span> length = nums.length;</span><br></pre></td></tr></table></figure><h3 id="数组内存分析"><a href="#数组内存分析" class="headerlink" title="数组内存分析"></a>数组内存分析</h3><ol><li>栈内存压栈（<code>int[] nums</code>）</li><li>堆内存创建数组（<code>nums = new int[10]</code>）</li></ol><h3 id="数组初始化"><a href="#数组初始化" class="headerlink" title="数组初始化"></a>数组初始化</h3><ul><li>静态初始化：创建+赋值</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] nums = &#123;<span class="number">1</span>,<span class="number">23</span>,<span class="number">45</span>&#125;;</span><br></pre></td></tr></table></figure><ul><li>动态初始化：包含默认初始化</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] nums = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line">nums[<span class="number">0</span>] = <span class="number">10</span>;</span><br></pre></td></tr></table></figure><h3 id="数组特点"><a href="#数组特点" class="headerlink" title="数组特点"></a>数组特点</h3><ol><li>数组是引用类型，数组一旦分配空间，每个元素相当于成员变量都会默认初始化。</li><li>数组长度是确定，一旦被创建，它的大小不可以改变的。</li><li>元素必须是相同类型，不允许出现混合类型</li><li>数组中的元素可以是任何类型，包括基本类型和引用类型</li></ol><h3 id="数组边界问题"><a href="#数组边界问题" class="headerlink" title="数组边界问题"></a>数组边界问题</h3><p>数组下标越界异常：</p><p><code>java.lang.ArrayIndexOutOfBoundsException</code> </p><h3 id="数组使用"><a href="#数组使用" class="headerlink" title="数组使用"></a>数组使用</h3><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><ul><li>数组是相同数据类型</li><li>数组也是对象，元素相当于对象的成员变量</li><li>数组长度是确定的，不可变的。</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>2020年11月25日21:45:38</p><h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>数组的概念：</p><p>一组数。相同类型数据的有序集合；每个数组元素可以通过下标来访问。</p><p>数组定义：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] nums; <span class="comment">// 声明一个数组</span></span><br><span class="line">nums = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>]; <span class="comment">// 这里面可以存放int类型的数字 </span></span><br><span class="line"><span class="comment">// 给数组元素赋值</span></span><br><span class="line">nums[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">nums[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line"><span class="comment">// 获取数组的长度</span></span><br><span class="line"><span class="keyword">int</span> length = nums.length;</span><br></pre></td></tr></table></figure><h3 id="数组内存分析"><a href="#数组内存分析" class="headerlink" title="数组内存分析"></a>数组内存分析</h3><ol><li>栈内存压栈（<code>int[] nums</code>）</li><li>堆内存创建数组（<code>nums = new int[10]</code>）</li></ol><h3 id="数组初始化"><a href="#数组初始化" class="headerlink" title="数组初始化"></a>数组初始化</h3><ul><li>静态初始化：创建+赋值</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] nums = &#123;<span class="number">1</span>,<span class="number">23</span>,<span class="number">45</span>&#125;;</span><br></pre></td></tr></table></figure><ul><li>动态初始化：包含默认初始化</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] nums = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">10</span>];</span><br><span class="line">nums[<span class="number">0</span>] = <span class="number">10</span>;</span><br></pre></td></tr></table></figure><h3 id="数组特点"><a href="#数组特点" class="headerlink" title="数组特点"></a>数组特点</h3><ol><li>数组是引用类型，数组一旦分配空间，每个元素相当于成员变量都会默认初始化。</li><li>数组长度是确定，一旦被创建，它的大小不可以改变的。</li><li>元素必须是相同类型，不允许出现混合类型</li><li>数组中的元素可以是任何类型，包括基本类型和引用类型</li></ol><h3 id="数组边界问题"><a href="#数组边界问题" class="headerlink" title="数组边界问题"></a>数组边界问题</h3><p>数组下标越界异常：</p><p><code>java.lang.ArrayIndexOutOfBoundsException</code> </p><h3 id="数组使用"><a href="#数组使用" class="headerlink" title="数组使用"></a>数组使用</h3><ul><li>普通for循环</li><li>For-Each循环</li><li>数组作为方法入参</li><li>数组作为返回值</li></ul><h3 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h3><h2 id="Arrays类"><a href="#Arrays类" class="headerlink" title="Arrays类"></a>Arrays类</h2><p>数组的工具类<code>java.util.Arrays</code></p><p>常用的方法：</p><ul><li>fill方法</li><li>sort方法</li><li>toString方法</li><li>binarySearch方法</li></ul><h2 id="稀疏数组"><a href="#稀疏数组" class="headerlink" title="稀疏数组"></a>稀疏数组</h2><p>当数组中大部分元素为0，或者为同一值时，可以使用稀疏数组来保存该数组。</p><p>把有效数字，记录下来数字的位置（行、列）。</p><h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><ul><li>数组是相同数据类型</li><li>数组也是对象，元素相当于对象的成员变量</li><li>数组长度是确定的，不可变的。</li></ul>]]></content>
     
     <summary type="html">
     
@@ -83,6 +129,29 @@
     </summary>
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>2020-05-利用Charles抓取ios旧版App</title>
+    <link href="http://faqus.github.io/posts/19921.html"/>
+    <id>http://faqus.github.io/posts/19921.html</id>
+    <published>2020-05-28T05:10:53.000Z</published>
+    <updated>2020-11-30T14:11:39.782Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="准备软件"><a href="#准备软件" class="headerlink" title="准备软件"></a>准备软件</h3><ul><li>Charles</li><li>iTunes 12.6.3</li></ul><p>Apple专门发布了兼容iOS11的并包含AppStore功能的iTunes12.6.3版本，iTunes 12.7移除了AppStore功能。</p><h4 id="Charles安装证书"><a href="#Charles安装证书" class="headerlink" title="Charles安装证书"></a>Charles安装证书</h4><p>下载好Charles安装好之后，需要安装一个SSL证书。具体步骤如下</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Charles-zhenshu.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/install-ssl.png" alt=""></p><h3 id="抓包步骤"><a href="#抓包步骤" class="headerlink" title="抓包步骤"></a>抓包步骤</h3><ol><li>关闭系统的代理，打开Charles。</li><li>打开iTunes下载一个软件，我这里以有道词典为例</li></ol><p>下载过程中，切换回Charles，观察左侧栏中<strong><em>p(xx)-buy.itunes.apple.com</em></strong>这个域名</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/zhuabao.png" alt=""></p><ol start="3"><li>右击这个域名，选择<strong>Enable SSL Proxying</strong>。然后我们切回到iTunes，重新下载该软件。</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Enable-ssl-proxying.png" alt=""></p><ol start="4"><li>点击展开域名<strong>WebObjects/MZBuy.woa/wa/buyProduct</strong>，右侧信息栏中，点击<strong>Context</strong>&gt;&gt;<strong>选择XML Text格式</strong></li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Context.png" alt=""></p><p><a href="https://api.unlimapps.com/v1/apple_apps/[你获得的appID]/versions" target="_blank" rel="noopener">通过appID获取所有版本</a>  可以查看所有版本和日期。通过抓包也是可以获取到版本号信息。位于<strong><array></array></strong>中间就是版本号。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/charles-version.png" alt=""></p><p>appID获取可以通过iTunes复制应用连接获取到appID</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/link-version.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/web-sersion.png" alt=""></p><ol start="5"><li>查询版本完成后，右击该域名，选择<strong>breakpoint</strong>断点，然后切回iTunes，再一次app下载。</li></ol><p>下载过程中，回跳出一个断点界面。点击右侧XML Text，修改<strong>appExtVrsId</strong>版本号。完成之后执行<strong>Execute</strong>。期间会再次跳转断点界面，点击<strong>Execute</strong>执行即可。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/version-add.png" alt=""></p><p>下载的ipa文件可以通过资料库查看，确实是老版本iTunes。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/oldd-version.png" alt=""></p><h3 id="流程梳理"><a href="#流程梳理" class="headerlink" title="流程梳理"></a>流程梳理</h3><ol><li>Charles安装SSL证书</li><li>iTunes第一次下载app，注意域名“p(xx)-buy.itunes.apple.com”，开启”Enable SSL Proxying“</li><li>iTunes第二次下载app,查看版本号信息，打断点”breakpoint“</li><li>iTunes第三次下载app，修改”appExtVrsId“值，即版本号</li><li>iTunes资料库获取 ipa文件</li></ol><h3 id="ipa如何安装"><a href="#ipa如何安装" class="headerlink" title="ipa如何安装"></a>ipa如何安装</h3><ul><li>利用iTunes 安装到iPhone</li><li>通过第三方软件安装</li><li>利用一些脚本软件或者捷径等安装ipa</li></ul><h3 id="抓包旧版App好处"><a href="#抓包旧版App好处" class="headerlink" title="抓包旧版App好处"></a>抓包旧版App好处</h3><ul><li>旧版本可能存在一些好用的功能，比如追书神器这类app</li><li>旧版本可能存在买断版本，lifetime等等</li><li>或者新版本用的不舒服，想换回老版本</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      利用Charles抓取ios旧版App
+    
+    </summary>
+    
+    
+      <category term="ios" scheme="http://FAQUS.github.io/categories/ios/"/>
+    
+    
+      <category term="抓包" scheme="http://FAQUS.github.io/tags/%E6%8A%93%E5%8C%85/"/>
     
   </entry>
   
