@@ -275,9 +275,9 @@
       <category term="Hexo" scheme="http://FAQUS.github.io/categories/Hexo/"/>
     
     
-      <category term="hexo" scheme="http://FAQUS.github.io/tags/hexo/"/>
-    
       <category term="图床" scheme="http://FAQUS.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+      <category term="hexo" scheme="http://FAQUS.github.io/tags/hexo/"/>
     
   </entry>
   
