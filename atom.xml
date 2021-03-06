@@ -81,24 +81,24 @@
       <category term="杂记" scheme="http://FAQUS.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
     
     
-      <category term="GitHub" scheme="http://FAQUS.github.io/tags/GitHub/"/>
-    
       <category term="图床" scheme="http://FAQUS.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
     
       <category term="PicGO" scheme="http://FAQUS.github.io/tags/PicGO/"/>
+    
+      <category term="GitHub" scheme="http://FAQUS.github.io/tags/GitHub/"/>
     
       <category term="Typora" scheme="http://FAQUS.github.io/tags/Typora/"/>
     
   </entry>
   
   <entry>
-    <title>2020-05-利用Charles抓取ios旧版App</title>
+    <title>利用Charles抓取ios旧版App</title>
     <link href="http://faqus.github.io/posts/19921.html"/>
     <id>http://faqus.github.io/posts/19921.html</id>
     <published>2020-05-28T05:10:53.000Z</published>
-    <updated>2020-12-24T14:51:10.000Z</updated>
+    <updated>2021-03-06T03:24:36.678Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="准备软件"><a href="#准备软件" class="headerlink" title="准备软件"></a>准备软件</h3><ul><li>Charles</li><li>iTunes 12.6.3</li></ul><p>Apple专门发布了兼容iOS11的并包含AppStore功能的iTunes12.6.3版本，iTunes 12.7移除了AppStore功能。</p><h4 id="Charles安装证书"><a href="#Charles安装证书" class="headerlink" title="Charles安装证书"></a>Charles安装证书</h4><p>下载好Charles安装好之后，需要安装一个SSL证书。具体步骤如下</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Charles-zhenshu.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/install-ssl.png" alt=""></p><h3 id="抓包步骤"><a href="#抓包步骤" class="headerlink" title="抓包步骤"></a>抓包步骤</h3><ol><li>关闭系统的代理，打开Charles。</li><li>打开iTunes下载一个软件，我这里以有道词典为例</li></ol><p>下载过程中，切换回Charles，观察左侧栏中<strong><em>p(xx)-buy.itunes.apple.com</em></strong>这个域名</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/zhuabao.png" alt=""></p><ol start="3"><li>右击这个域名，选择<strong>Enable SSL Proxying</strong>。然后我们切回到iTunes，重新下载该软件。</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Enable-ssl-proxying.png" alt=""></p><ol start="4"><li>点击展开域名<strong>WebObjects/MZBuy.woa/wa/buyProduct</strong>，右侧信息栏中，点击<strong>Context</strong>&gt;&gt;<strong>选择XML Text格式</strong></li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Context.png" alt=""></p><p><a href="https://api.unlimapps.com/v1/apple_apps/[你获得的appID]/versions" target="_blank" rel="noopener">通过appID获取所有版本</a>  可以查看所有版本和日期。通过抓包也是可以获取到版本号信息。位于<strong><array></array></strong>中间就是版本号。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/charles-version.png" alt=""></p><p>appID获取可以通过iTunes复制应用连接获取到appID</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/link-version.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/web-sersion.png" alt=""></p><ol start="5"><li>查询版本完成后，右击该域名，选择<strong>breakpoint</strong>断点，然后切回iTunes，再一次app下载。</li></ol><p>下载过程中，回跳出一个断点界面。点击右侧XML Text，修改<strong>appExtVrsId</strong>版本号。完成之后执行<strong>Execute</strong>。期间会再次跳转断点界面，点击<strong>Execute</strong>执行即可。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/version-add.png" alt=""></p><p>下载的ipa文件可以通过资料库查看，确实是老版本iTunes。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/oldd-version.png" alt=""></p><h3 id="流程梳理"><a href="#流程梳理" class="headerlink" title="流程梳理"></a>流程梳理</h3><ol><li>Charles安装SSL证书</li><li>iTunes第一次下载app，注意域名“p(xx)-buy.itunes.apple.com”，开启”Enable SSL Proxying“</li><li>iTunes第二次下载app,查看版本号信息，打断点”breakpoint“</li><li>iTunes第三次下载app，修改”appExtVrsId“值，即版本号</li><li>iTunes资料库获取 ipa文件</li></ol><h3 id="ipa如何安装"><a href="#ipa如何安装" class="headerlink" title="ipa如何安装"></a>ipa如何安装</h3><ul><li>利用iTunes 安装到iPhone</li><li>通过第三方软件安装</li><li>利用一些脚本软件或者捷径等安装ipa</li></ul><h3 id="抓包旧版App好处"><a href="#抓包旧版App好处" class="headerlink" title="抓包旧版App好处"></a>抓包旧版App好处</h3><ul><li>旧版本可能存在一些好用的功能，比如追书神器这类app</li><li>旧版本可能存在买断版本，lifetime等等</li><li>或者新版本用的不舒服，想换回老版本</li></ul>]]></content>
+    <content type="html"><![CDATA[<h3 id="准备软件"><a href="#准备软件" class="headerlink" title="准备软件"></a>准备软件</h3><ul><li>Charles</li><li>iTunes 12.6.3</li></ul><p>Apple专门发布了兼容iOS11的并包含AppStore功能的iTunes12.6.3版本，iTunes 12.7移除了AppStore功能。</p><h4 id="Charles安装证书"><a href="#Charles安装证书" class="headerlink" title="Charles安装证书"></a>Charles安装证书</h4><p>下载好Charles安装好之后，需要安装一个SSL证书。具体步骤如下</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Charles-zhenshu.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/install-ssl.png" alt=""></p><h3 id="抓包步骤"><a href="#抓包步骤" class="headerlink" title="抓包步骤"></a>抓包步骤</h3><ol><li>关闭系统的代理，打开Charles。</li><li>打开iTunes下载一个软件，我这里以有道词典为例</li></ol><p>下载过程中，切换回Charles，观察左侧栏中<strong><em>p(xx)-buy.itunes.apple.com</em></strong>这个域名</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/zhuabao.png" alt=""></p><ol start="3"><li>右击这个域名，选择<strong>Enable SSL Proxying</strong>。然后我们切回到iTunes，重新下载该软件。</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Enable-ssl-proxying.png" alt=""></p><ol start="4"><li>点击展开域名<strong>WebObjects/MZBuy.woa/wa/buyProduct</strong>，右侧信息栏中，点击<strong>Context</strong>&gt;&gt;<strong>选择XML Text格式</strong></li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/Context.png" alt=""></p><p><a href="https://api.unlimapps.com/v1/apple_apps/[你获得的appID]/versions" target="_blank" rel="noopener">通过appID获取所有版本</a>  可以查看所有版本和日期。通过抓包也是可以获取到版本号信息。位于<strong><array></array></strong>中间就是版本号。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/charles-version.png" alt=""></p><p>appID获取可以通过iTunes复制应用连接获取到appID</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/link-version.png" alt=""></p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/web-sersion.png" alt=""></p><ol start="5"><li>查询版本完成后，右击该域名，选择<strong>breakpoint</strong>断点，然后切回iTunes，再一次app下载。</li></ol><p>下载过程中，回跳出一个断点界面。点击右侧XML Text，修改<strong>appExtVrsId</strong>版本号。完成之后执行<strong>Execute</strong>。期间会再次跳转断点界面，点击<strong>Execute</strong>执行即可。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/version-add.png" alt=""></p><p>下载的ipa文件可以通过资料库查看，确实是老版本iTunes。</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/Snipaste_2021-03-06_11-22-41.jpg" alt="Snipaste_2021-03-06_11-22-41"></p><h3 id="流程梳理"><a href="#流程梳理" class="headerlink" title="流程梳理"></a>流程梳理</h3><ol><li>Charles安装SSL证书</li><li>iTunes第一次下载app，注意域名“p(xx)-buy.itunes.apple.com”，开启”Enable SSL Proxying“</li><li>iTunes第二次下载app,查看版本号信息，打断点”breakpoint“</li><li>iTunes第三次下载app，修改”appExtVrsId“值，即版本号</li><li>iTunes资料库获取 ipa文件</li></ol><h3 id="ipa如何安装"><a href="#ipa如何安装" class="headerlink" title="ipa如何安装"></a>ipa如何安装</h3><ul><li>利用iTunes 安装到iPhone</li><li>通过第三方软件安装</li><li>利用一些脚本软件或者捷径等安装ipa</li></ul><h3 id="抓包旧版App好处"><a href="#抓包旧版App好处" class="headerlink" title="抓包旧版App好处"></a>抓包旧版App好处</h3><ul><li>旧版本可能存在一些好用的功能，比如追书神器这类app</li><li>旧版本可能存在买断版本，lifetime等等</li><li>或者新版本用的不舒服，想换回老版本</li></ul>]]></content>
     
     <summary type="html">
     
@@ -298,9 +298,9 @@
       <category term="Hexo" scheme="http://FAQUS.github.io/categories/Hexo/"/>
     
     
-      <category term="hexo" scheme="http://FAQUS.github.io/tags/hexo/"/>
-    
       <category term="图床" scheme="http://FAQUS.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+      <category term="hexo" scheme="http://FAQUS.github.io/tags/hexo/"/>
     
   </entry>
   
