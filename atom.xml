@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://faqus.github.io/"/>
-  <updated>2021-03-04T15:52:48.000Z</updated>
+  <updated>2021-04-01T12:55:35.949Z</updated>
   <id>http://faqus.github.io/</id>
   
   <author>
@@ -15,6 +15,75 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>常用配置方便拷贝</title>
+    <link href="http://faqus.github.io/posts/2552.html"/>
+    <id>http://faqus.github.io/posts/2552.html</id>
+    <published>2021-03-11T13:06:10.132Z</published>
+    <updated>2021-04-01T12:55:35.949Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Maven配置"><a href="#Maven配置" class="headerlink" title="Maven配置"></a>Maven配置</h2><h3 id="阿里云仓库"><a href="#阿里云仓库" class="headerlink" title="阿里云仓库"></a>阿里云仓库</h3><p>setting.xml配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;aliyunmaven&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;mirrorOf&gt;*&lt;&#x2F;mirrorOf&gt;</span><br><span class="line">  &lt;name&gt;阿里云公共仓库&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;url&gt;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;public&lt;&#x2F;url&gt;</span><br><span class="line">&lt;&#x2F;mirror&gt;</span><br></pre></td></tr></table></figure><p>pom.xml配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;repository&gt;</span><br><span class="line">  &lt;id&gt;aliyun&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;url&gt;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;public&lt;&#x2F;url&gt;</span><br><span class="line">  &lt;releases&gt;</span><br><span class="line">    &lt;enabled&gt;true&lt;&#x2F;enabled&gt;</span><br><span class="line">  &lt;&#x2F;releases&gt;</span><br><span class="line">  &lt;snapshots&gt;</span><br><span class="line">    &lt;enabled&gt;true&lt;&#x2F;enabled&gt;</span><br><span class="line">  &lt;&#x2F;snapshots&gt;</span><br><span class="line">&lt;&#x2F;repository&gt;</span><br></pre></td></tr></table></figure><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>Git常用操作主要是设置签名和生成SSH Key</p><h3 id="Git设置签名"><a href="#Git设置签名" class="headerlink" title="Git设置签名"></a>Git设置签名</h3><p>这个操作是使用Git的第一步操作；区分不同开发人员的身份</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 项目级别/仓库级别：仅当前仓库有效</span></span><br><span class="line">git config user.name  xxxx</span><br><span class="line">git config user.eamil  xxxx@example.com</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 系统用户级别：登录当前操作系统的用户范围</span></span><br><span class="line">git config --global user.name xxx</span><br><span class="line">git cofnig --global user.email xxx@example.com</span><br></pre></td></tr></table></figure><h3 id="SSH-Key"><a href="#SSH-Key" class="headerlink" title="SSH Key"></a>SSH Key</h3><p>生成SSH Key；每次提交就不需要输入账号和密码；</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "your_email@example.com"</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Maven配置&quot;&gt;&lt;a href=&quot;#Maven配置&quot; class=&quot;headerlink&quot; title=&quot;Maven配置&quot;&gt;&lt;/a&gt;Maven配置&lt;/h2&gt;&lt;h3 id=&quot;阿里云仓库&quot;&gt;&lt;a href=&quot;#阿里云仓库&quot; class=&quot;headerlink&quot; ti
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>书籍推荐单</title>
+    <link href="http://faqus.github.io/posts/61830.html"/>
+    <id>http://faqus.github.io/posts/61830.html</id>
+    <published>2021-03-11T13:06:10.129Z</published>
+    <updated>2021-03-11T12:52:26.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="书籍推荐单"><a href="#书籍推荐单" class="headerlink" title="书籍推荐单"></a>书籍推荐单</h2><h3 id="教育孩子"><a href="#教育孩子" class="headerlink" title="教育孩子"></a>教育孩子</h3><ul><li>《如何说孩子才会听、怎么听孩子才肯说》（How to Talk So Kids Will Listen &amp; Listen So Kids Will Talk）</li><li>《正面管教》（Positive Discipline: The Classic Guide to Helping Children Develop Self-Discipline, Responsibility, Cooperation, and Problem-Solving Skills）</li><li>《去情绪化管教》（No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child’s Developing Mind）</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;书籍推荐单&quot;&gt;&lt;a href=&quot;#书籍推荐单&quot; class=&quot;headerlink&quot; title=&quot;书籍推荐单&quot;&gt;&lt;/a&gt;书籍推荐单&lt;/h2&gt;&lt;h3 id=&quot;教育孩子&quot;&gt;&lt;a href=&quot;#教育孩子&quot; class=&quot;headerlink&quot; title=&quot;教育孩子&quot;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows新系统常用配置</title>
+    <link href="http://faqus.github.io/posts/63004.html"/>
+    <id>http://faqus.github.io/posts/63004.html</id>
+    <published>2021-03-11T13:06:10.128Z</published>
+    <updated>2021-04-01T12:49:28.156Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="新机配置"><a href="#新机配置" class="headerlink" title="新机配置"></a>新机配置</h2><p>对于新的Windows系统，以下几个设置需要进行调整：</p><ol><li>防火墙关闭</li><li>杀毒软件配置</li><li>电源选项配置</li></ol><h2 id="杀毒软件配置"><a href="#杀毒软件配置" class="headerlink" title="杀毒软件配置"></a>杀毒软件配置</h2><p>首先需要了解自己安装的系统版本，通过按下<code>Windows+R</code>组合键调出运行窗口，输入<code>winver</code>；即可查看具体版本；</p><p>家庭版和专业版的操作是不一样的；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204011466.png" alt="image-20210401204011466"></p><h4 id="专业版"><a href="#专业版" class="headerlink" title="专业版"></a>专业版</h4><p>如果是专业版，</p><ol><li>运行<strong>Windows+R</strong>，输入<code>gpedit.msc</code>回车，</li><li>打开策略组，在策略组定位到在策略组定位到”<strong>计算机配置</strong> &gt;<strong>管理模板</strong> &gt;<strong>Windows组件</strong> &gt;<strong>Windows Defender防病毒程序</strong>“，如下图；</li><li>启用 <strong>关闭Windows Defender 防病毒程序</strong></li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204249737.png" alt=""></p><h4 id="家庭版"><a href="#家庭版" class="headerlink" title="家庭版"></a>家庭版</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># todo</span><br></pre></td></tr></table></figure><h2 id="电源配置"><a href="#电源配置" class="headerlink" title="电源配置"></a>电源配置</h2><p>电源配置主要设置睡眠、屏幕熄灭和硬盘；</p><ul><li>关闭盖子不操作，不进入睡眠</li><li>关闭显示器，都设置永不</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204714742.png" alt="image-20210401204714742"></p><p>还有一个保护硬盘操作，设置为0就行；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204912998.png" alt="image-20210401204912998"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;新机配置&quot;&gt;&lt;a href=&quot;#新机配置&quot; class=&quot;headerlink&quot; title=&quot;新机配置&quot;&gt;&lt;/a&gt;新机配置&lt;/h2&gt;&lt;p&gt;对于新的Windows系统，以下几个设置需要进行调整：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;防火墙关闭&lt;/li&gt;
+&lt;li&gt;杀毒软件配置
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Netflix，一个在大学期间没向家里要过一分钱的平台</title>
