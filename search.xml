@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Windows新系统常用配置</title>
+      <link href="/posts/63004.html"/>
+      <url>/posts/63004.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="新机配置"><a href="#新机配置" class="headerlink" title="新机配置"></a>新机配置</h2><p>对于新的Windows系统，以下几个设置需要进行调整：</p><ol><li>防火墙关闭</li><li>杀毒软件配置</li><li>电源选项配置</li></ol><h2 id="杀毒软件配置"><a href="#杀毒软件配置" class="headerlink" title="杀毒软件配置"></a>杀毒软件配置</h2><p>首先需要了解自己安装的系统版本，通过按下<code>Windows+R</code>组合键调出运行窗口，输入<code>winver</code>；即可查看具体版本；</p><p>家庭版和专业版的操作是不一样的；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204011466.png" alt="image-20210401204011466"></p><h4 id="专业版"><a href="#专业版" class="headerlink" title="专业版"></a>专业版</h4><p>如果是专业版，</p><ol><li>运行<strong>Windows+R</strong>，输入<code>gpedit.msc</code>回车，</li><li>打开策略组，在策略组定位到在策略组定位到”<strong>计算机配置</strong> &gt;<strong>管理模板</strong> &gt;<strong>Windows组件</strong> &gt;<strong>Windows Defender防病毒程序</strong>“，如下图；</li><li>启用 <strong>关闭Windows Defender 防病毒程序</strong></li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204249737.png" alt=""></p><h4 id="家庭版"><a href="#家庭版" class="headerlink" title="家庭版"></a>家庭版</h4><ol><li><code>Windows+R</code>打开运行，输入<code>“regedit”</code>回车，打开注册表;</li><li>在注册表定位到<strong>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender</strong></li><li>在右侧将DisableAntiSpyware项的数值改为1</li></ol><p>关于没有该值修改，可以通过以下两种方式：</p><p>方法一：复制：<code>reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender&quot; /v &quot;DisableAntiSpyware&quot; /d 1 /t REG_DWORD /f</code>命令，在管理员命令提示符窗口中右键点击空白处；</p><p>方法二：在注册表编辑器中新建DisableAntiSpyware的DWORD（32位）值 ，可以彻底禁用Windows10系统的Windows Defender。</p><ol><li>进入注册表编辑器，复制：HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender当HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender注册表路径粘贴到地址栏中后，按下键盘上的回车键，即定位到Windows Defender键，</li><li>在Windows Defender右侧窗口中，右键点击空白处 - 新建 - DWORD（32位）值</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/Snipaste_2021-04-08_10-40-22.png" alt="Snipaste_2021-04-08_10-40-22"></p><h2 id="电源配置"><a href="#电源配置" class="headerlink" title="电源配置"></a>电源配置</h2><p>电源配置主要设置睡眠、屏幕熄灭和硬盘；</p><ul><li>关闭盖子不操作，不进入睡眠</li><li>关闭显示器，都设置永不</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204714742.png" alt="image-20210401204714742"></p><p>还有一个保护硬盘操作，设置为0就行；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204912998.png" alt="image-20210401204912998"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>常用配置方便拷贝</title>
       <link href="/posts/2552.html"/>
       <url>/posts/2552.html</url>
@@ -22,19 +35,6 @@
       <url>/posts/61830.html</url>
       
         <content type="html"><![CDATA[<h2 id="书籍推荐单"><a href="#书籍推荐单" class="headerlink" title="书籍推荐单"></a>书籍推荐单</h2><h3 id="教育孩子"><a href="#教育孩子" class="headerlink" title="教育孩子"></a>教育孩子</h3><ul><li>《如何说孩子才会听、怎么听孩子才肯说》（How to Talk So Kids Will Listen &amp; Listen So Kids Will Talk）</li><li>《正面管教》（Positive Discipline: The Classic Guide to Helping Children Develop Self-Discipline, Responsibility, Cooperation, and Problem-Solving Skills）</li><li>《去情绪化管教》（No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child’s Developing Mind）</li></ul>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Windows新系统常用配置</title>
-      <link href="/posts/63004.html"/>
-      <url>/posts/63004.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="新机配置"><a href="#新机配置" class="headerlink" title="新机配置"></a>新机配置</h2><p>对于新的Windows系统，以下几个设置需要进行调整：</p><ol><li>防火墙关闭</li><li>杀毒软件配置</li><li>电源选项配置</li></ol><h2 id="杀毒软件配置"><a href="#杀毒软件配置" class="headerlink" title="杀毒软件配置"></a>杀毒软件配置</h2><p>首先需要了解自己安装的系统版本，通过按下<code>Windows+R</code>组合键调出运行窗口，输入<code>winver</code>；即可查看具体版本；</p><p>家庭版和专业版的操作是不一样的；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204011466.png" alt="image-20210401204011466"></p><h4 id="专业版"><a href="#专业版" class="headerlink" title="专业版"></a>专业版</h4><p>如果是专业版，</p><ol><li>运行<strong>Windows+R</strong>，输入<code>gpedit.msc</code>回车，</li><li>打开策略组，在策略组定位到在策略组定位到”<strong>计算机配置</strong> &gt;<strong>管理模板</strong> &gt;<strong>Windows组件</strong> &gt;<strong>Windows Defender防病毒程序</strong>“，如下图；</li><li>启用 <strong>关闭Windows Defender 防病毒程序</strong></li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204249737.png" alt=""></p><h4 id="家庭版"><a href="#家庭版" class="headerlink" title="家庭版"></a>家庭版</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># todo</span><br></pre></td></tr></table></figure><h2 id="电源配置"><a href="#电源配置" class="headerlink" title="电源配置"></a>电源配置</h2><p>电源配置主要设置睡眠、屏幕熄灭和硬盘；</p><ul><li>关闭盖子不操作，不进入睡眠</li><li>关闭显示器，都设置永不</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204714742.png" alt="image-20210401204714742"></p><p>还有一个保护硬盘操作，设置为0就行；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204912998.png" alt="image-20210401204912998"></p>]]></content>
       
       
       
