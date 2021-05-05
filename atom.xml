@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://faqus.github.io/"/>
-  <updated>2021-04-08T15:40:37.784Z</updated>
+  <updated>2021-04-23T07:45:42.000Z</updated>
   <id>http://faqus.github.io/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <title>Windows新系统常用配置</title>
     <link href="http://faqus.github.io/posts/63004.html"/>
     <id>http://faqus.github.io/posts/63004.html</id>
-    <published>2021-04-08T13:47:28.161Z</published>
-    <updated>2021-04-08T15:40:37.784Z</updated>
+    <published>2021-04-24T10:54:20.912Z</published>
+    <updated>2021-04-23T07:45:42.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="新机配置"><a href="#新机配置" class="headerlink" title="新机配置"></a>新机配置</h2><p>对于新的Windows系统，以下几个设置需要进行调整：</p><ol><li>防火墙关闭</li><li>杀毒软件配置</li><li>电源选项配置</li></ol><h2 id="杀毒软件配置"><a href="#杀毒软件配置" class="headerlink" title="杀毒软件配置"></a>杀毒软件配置</h2><p>首先需要了解自己安装的系统版本，通过按下<code>Windows+R</code>组合键调出运行窗口，输入<code>winver</code>；即可查看具体版本；</p><p>家庭版和专业版的操作是不一样的；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204011466.png" alt="image-20210401204011466"></p><h4 id="专业版"><a href="#专业版" class="headerlink" title="专业版"></a>专业版</h4><p>如果是专业版，</p><ol><li>运行<strong>Windows+R</strong>，输入<code>gpedit.msc</code>回车，</li><li>打开策略组，在策略组定位到在策略组定位到”<strong>计算机配置</strong> &gt;<strong>管理模板</strong> &gt;<strong>Windows组件</strong> &gt;<strong>Windows Defender防病毒程序</strong>“，如下图；</li><li>启用 <strong>关闭Windows Defender 防病毒程序</strong></li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204249737.png" alt=""></p><h4 id="家庭版"><a href="#家庭版" class="headerlink" title="家庭版"></a>家庭版</h4><ol><li><code>Windows+R</code>打开运行，输入<code>“regedit”</code>回车，打开注册表;</li><li>在注册表定位到<strong>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender</strong></li><li>在右侧将DisableAntiSpyware项的数值改为1</li></ol><p>关于没有该值修改，可以通过以下两种方式：</p><p>方法一：复制：<code>reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender&quot; /v &quot;DisableAntiSpyware&quot; /d 1 /t REG_DWORD /f</code>命令，在管理员命令提示符窗口中右键点击空白处；</p><p>方法二：在注册表编辑器中新建DisableAntiSpyware的DWORD（32位）值 ，可以彻底禁用Windows10系统的Windows Defender。</p><ol><li>进入注册表编辑器，复制：HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender当HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender注册表路径粘贴到地址栏中后，按下键盘上的回车键，即定位到Windows Defender键，</li><li>在Windows Defender右侧窗口中，右键点击空白处 - 新建 - DWORD（32位）值</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/Snipaste_2021-04-08_10-40-22.png" alt="Snipaste_2021-04-08_10-40-22"></p><h2 id="电源配置"><a href="#电源配置" class="headerlink" title="电源配置"></a>电源配置</h2><p>电源配置主要设置睡眠、屏幕熄灭和硬盘；</p><ul><li>关闭盖子不操作，不进入睡眠</li><li>关闭显示器，都设置永不</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204714742.png" alt="image-20210401204714742"></p><p>还有一个保护硬盘操作，设置为0就行；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204912998.png" alt="image-20210401204912998"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="新机配置"><a href="#新机配置" class="headerlink" title="新机配置"></a>新机配置</h2><p>对于新的Windows系统，以下几个设置需要进行调整：</p><ol><li>防火墙关闭</li><li>杀毒软件配置</li><li>电源选项配置</li></ol><h2 id="杀毒软件配置"><a href="#杀毒软件配置" class="headerlink" title="杀毒软件配置"></a>杀毒软件配置</h2><p>首先需要了解自己安装的系统版本，通过按下<code>Windows+R</code>组合键调出运行窗口，输入<code>winver</code>；即可查看具体版本；</p><p>家庭版和专业版的操作是不一样的；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204011466.png" alt="image-20210401204011466"></p><h4 id="专业版"><a href="#专业版" class="headerlink" title="专业版"></a>专业版</h4><p>如果是专业版，</p><ol><li>运行<strong>Windows+R</strong>，输入<code>gpedit.msc</code>回车，</li><li>打开策略组，在策略组定位到在策略组定位到”<strong>计算机配置</strong> &gt;<strong>管理模板</strong> &gt;<strong>Windows组件</strong> &gt;<strong>Windows Defender防病毒程序</strong>“，如下图；</li><li>启用 <strong>关闭Windows Defender 防病毒程序</strong></li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204249737.png" alt=""></p><h4 id="家庭版"><a href="#家庭版" class="headerlink" title="家庭版"></a>家庭版</h4><ol><li><code>Windows+R</code>打开运行，输入<code>“regedit”</code>回车，打开注册表;</li><li>在注册表定位到<strong>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender</strong></li><li>在右侧将DisableAntiSpyware项的数值改为1</li></ol><p>关于没有该值修改，可以通过以下两种方式：</p><p>方法一：复制：<code>reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender&quot; /v &quot;DisableAntiSpyware&quot; /d 1 /t REG_DWORD /f</code>命令，在管理员命令提示符窗口中右键点击空白处；</p><p>方法二：在注册表编辑器中新建DisableAntiSpyware的DWORD（32位）值 ，可以彻底禁用Windows10系统的Windows Defender。</p><ol><li>进入注册表编辑器，复制：HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender当HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender注册表路径粘贴到地址栏中后，按下键盘上的回车键，即定位到Windows Defender键，</li><li>在Windows Defender右侧窗口中，右键点击空白处 - 新建 - DWORD（32位）值</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/Snipaste_2021-04-08_10-40-22.png" alt="Snipaste_2021-04-08_10-40-22"></p><h2 id="电源配置"><a href="#电源配置" class="headerlink" title="电源配置"></a>电源配置</h2><p>电源配置主要设置睡眠、屏幕熄灭和硬盘；</p><ul><li>关闭盖子不操作，不进入睡眠</li><li>关闭显示器，都设置永不</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204714742.png" alt="image-20210401204714742"></p><p>还有一个保护硬盘操作，设置为0就行；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204912998.png" alt="image-20210401204912998"></p><h2 id="快捷键冲突"><a href="#快捷键冲突" class="headerlink" title="快捷键冲突"></a>快捷键冲突</h2><blockquote><p>Ctrl+Shift+F</p></blockquote><p>微软拼音&gt;按键&gt;热键</p>]]></content>
     
     <summary type="html">
     
@@ -33,6 +33,28 @@
 &lt;ol&gt;
 &lt;li&gt;防火墙关闭&lt;/li&gt;
 &lt;li&gt;杀毒软件配置
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Sublime text笔记</title>
+    <link href="http://faqus.github.io/posts/17790.html"/>
+    <id>http://faqus.github.io/posts/17790.html</id>
+    <published>2021-04-22T09:46:47.370Z</published>
+    <updated>2021-04-22T01:50:09.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Package-Control"><a href="#Package-Control" class="headerlink" title="Package Control"></a>Package Control</h2><p>首先需要安装Package Control；</p><p><code>Tool</code>安装Package Control;</p><p>安装好之后，就可以通过Package Control，安装其他插件。</p><h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><ul><li>Localization</li></ul><p>本地汉化软件</p><ul><li>ConvertToUTF8</li></ul><p>解决中文乱码问题插件</p><ul><li>Pretty JSON</li></ul><p>美化JSON的插件</p><ul><li>JsFormat</li></ul><p>JS格式化插件</p><ul><li>SidebarEnhancements</li></ul><p>侧边栏神器</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Package-Control&quot;&gt;&lt;a href=&quot;#Package-Control&quot; class=&quot;headerlink&quot; title=&quot;Package Control&quot;&gt;&lt;/a&gt;Package Control&lt;/h2&gt;&lt;p&gt;首先需要安装Package Cont
       
     
     </summary>
@@ -136,7 +158,7 @@
     <link href="http://faqus.github.io/posts/30025.html"/>
     <id>http://faqus.github.io/posts/30025.html</id>
     <published>2020-12-30T14:12:49.666Z</published>
-    <updated>2020-12-30T14:13:37.000Z</updated>
+    <updated>2021-05-05T02:13:31.299Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>目前用的笔记软件越来越不顺手，期间想着换个新的笔记软件；在思考和学习别人经验后，决定以后记录笔记采用云盘共享–Markdown书写方式，不在依托于某个笔记软件，做到自己知识来去自由。</p><p>在研究Typora软件的时候，发现了一个新的姿势，让自己觉得书写更流畅。</p><h2 id="Typora搭配PicGO"><a href="#Typora搭配PicGO" class="headerlink" title="Typora搭配PicGO"></a>Typora搭配PicGO</h2><p>新的姿势就是：Typora上插入图片，自动上传图床，再也不用担心图片丢失，也无需繁琐操作，让自己能够沉浸式书写。</p><h3 id="PicGO搭建图片"><a href="#PicGO搭建图片" class="headerlink" title="PicGO搭建图片"></a>PicGO搭建图片</h3><p>这部分我之前出过文章，介绍如何GitHub + PicGO搭建图片，参考文章：</p><p><a href="https://faqus.github.io/posts/51419.html">https://faqus.github.io/posts/51419.html</a></p><h3 id="Typora偏好配置"><a href="#Typora偏好配置" class="headerlink" title="Typora偏好配置"></a>Typora偏好配置</h3><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//images/image-20201224233927609.png" alt="image-20201224233927609"></p><p>关于上传服务有两种方式：</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//images/image-20201224234030580.png" alt="image-20201224234030580"></p><ul><li>PicGO-Core  命令行方式</li><li>PicGO(app)   可视化界面</li></ul><blockquote><p>PicGO.app和PicGo-Core之间的区别</p><ul><li>目前，PicGo（应用程序）仅中文。</li><li>PicGo.app提供了一个GUI，因此与CLI版本相比更易于设置。</li><li>使用PicGo-Core（命令行）进行上传会消耗较少的计算资源，因为该过程仅在上载过程中运行，并且在上载成功或失败后将退出。通过PicGo.app上传时，PicGo.app将始终保持运行状态，不会自动退出。此外，PicGo.app是电子应用程序，它消耗了更多的计算资源。</li><li>PicGo.app和PicGo-Core使用不同的配置文件，但是您可以将picBedPicGo.app的配置文件中key下的json对象复制到PicGo的配置文件中。</li><li>PicGo.app提供其他功能，例如上传历史记录，自动重命名等。</li></ul></blockquote><p>选择一种方式配置好了，<strong>验证图片上传选项</strong> 测试一下是否成功。如果失败检查一下日志信息。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这次切换笔记记录方式，也思考了很久，主要考虑到笔记记录方式在发生变化，笔记软件本身功能迭代，你也难于预料之后会发生什么。</p><p>还不如回归最原始的文件存储，用最原始的文档格式存储，通过GitHub、网盘方式做到不同设备共享。</p><p>关于检索的问题，可以借助于hexo这种方式，利用hexo的搜索。再一步，文档命名统一规范、目录存储有序。即有力于自己养成好习惯，还能够及时输出给大家，获取大家的意见。</p><p>关于图床的选中，大家可以根据自己的情况，目前我用的是GitHub，搭配了cdn+jsdelivr方式。</p>]]></content>
     
@@ -378,7 +400,7 @@
     <link href="http://faqus.github.io/posts/e6a8ef22.html"/>
     <id>http://faqus.github.io/posts/e6a8ef22.html</id>
     <published>2020-01-16T05:33:49.000Z</published>
-    <updated>2020-05-16T13:12:35.000Z</updated>
+    <updated>2021-05-05T02:12:48.023Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN/img/2020-newyear.png" alt=""></p><p>2020年，新年！</p>]]></content>
     
