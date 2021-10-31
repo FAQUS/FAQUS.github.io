@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://faqus.github.io/"/>
-  <updated>2021-05-13T10:03:21.000Z</updated>
+  <updated>2021-04-23T07:45:42.000Z</updated>
   <id>http://faqus.github.io/</id>
   
   <author>
@@ -17,29 +17,7 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>常用配置方便拷贝</title>
-    <link href="http://faqus.github.io/posts/2552.html"/>
-    <id>http://faqus.github.io/posts/2552.html</id>
-    <published>2021-05-13T13:10:22.664Z</published>
-    <updated>2021-05-13T10:03:21.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Maven配置"><a href="#Maven配置" class="headerlink" title="Maven配置"></a>Maven配置</h2><h3 id="阿里云仓库"><a href="#阿里云仓库" class="headerlink" title="阿里云仓库"></a>阿里云仓库</h3><p>setting.xml配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;aliyunmaven&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;mirrorOf&gt;*&lt;&#x2F;mirrorOf&gt;</span><br><span class="line">  &lt;name&gt;阿里云公共仓库&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;url&gt;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;public&lt;&#x2F;url&gt;</span><br><span class="line">&lt;&#x2F;mirror&gt;</span><br></pre></td></tr></table></figure><p>pom.xml配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;repository&gt;</span><br><span class="line">  &lt;id&gt;aliyun&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;url&gt;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;public&lt;&#x2F;url&gt;</span><br><span class="line">  &lt;releases&gt;</span><br><span class="line">    &lt;enabled&gt;true&lt;&#x2F;enabled&gt;</span><br><span class="line">  &lt;&#x2F;releases&gt;</span><br><span class="line">  &lt;snapshots&gt;</span><br><span class="line">    &lt;enabled&gt;true&lt;&#x2F;enabled&gt;</span><br><span class="line">  &lt;&#x2F;snapshots&gt;</span><br><span class="line">&lt;&#x2F;repository&gt;</span><br></pre></td></tr></table></figure><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>Git常用操作主要是设置签名和生成SSH Key</p><h3 id="Git设置签名"><a href="#Git设置签名" class="headerlink" title="Git设置签名"></a>Git设置签名</h3><p>这个操作是使用Git的第一步操作；区分不同开发人员的身份</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 项目级别/仓库级别：仅当前仓库有效</span></span><br><span class="line">git config user.name  xxxx</span><br><span class="line">git config user.eamil  xxxx@example.com</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 系统用户级别：登录当前操作系统的用户范围</span></span><br><span class="line">git config --global user.name xxx</span><br><span class="line">git cofnig --global user.email xxx@example.com</span><br></pre></td></tr></table></figure><h3 id="SSH-Key"><a href="#SSH-Key" class="headerlink" title="SSH Key"></a>SSH Key</h3><p>生成SSH Key；每次提交就不需要输入账号和密码；</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "your_email@example.com"</span><br></pre></td></tr></table></figure><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">certutil -hashfile fileName md5</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Maven配置&quot;&gt;&lt;a href=&quot;#Maven配置&quot; class=&quot;headerlink&quot; title=&quot;Maven配置&quot;&gt;&lt;/a&gt;Maven配置&lt;/h2&gt;&lt;h3 id=&quot;阿里云仓库&quot;&gt;&lt;a href=&quot;#阿里云仓库&quot; class=&quot;headerlink&quot; ti
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Windows新系统常用配置</title>
+    <title>2021-04-Windows新系统常用配置</title>
     <link href="http://faqus.github.io/posts/63004.html"/>
     <id>http://faqus.github.io/posts/63004.html</id>
     <published>2021-04-24T10:54:20.912Z</published>
@@ -64,7 +42,7 @@
   </entry>
   
   <entry>
-    <title>Sublime text笔记</title>
+    <title>2021-05-Sublime text笔记</title>
     <link href="http://faqus.github.io/posts/17790.html"/>
     <id>http://faqus.github.io/posts/17790.html</id>
     <published>2021-04-22T09:46:47.370Z</published>
@@ -86,7 +64,7 @@
   </entry>
   
   <entry>
-    <title>书籍推荐单</title>
+    <title>2021-04-书籍推荐单</title>
     <link href="http://faqus.github.io/posts/61830.html"/>
     <id>http://faqus.github.io/posts/61830.html</id>
     <published>2021-03-11T13:06:10.129Z</published>
@@ -174,9 +152,9 @@
     
       <category term="图床" scheme="http://FAQUS.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
     
-      <category term="GitHub" scheme="http://FAQUS.github.io/tags/GitHub/"/>
-    
       <category term="PicGO" scheme="http://FAQUS.github.io/tags/PicGO/"/>
+    
+      <category term="GitHub" scheme="http://FAQUS.github.io/tags/GitHub/"/>
     
       <category term="Typora" scheme="http://FAQUS.github.io/tags/Typora/"/>
     
@@ -389,9 +367,9 @@
       <category term="Hexo" scheme="http://FAQUS.github.io/categories/Hexo/"/>
     
     
-      <category term="hexo" scheme="http://FAQUS.github.io/tags/hexo/"/>
-    
       <category term="图床" scheme="http://FAQUS.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
+    
+      <category term="hexo" scheme="http://FAQUS.github.io/tags/hexo/"/>
     
   </entry>
   

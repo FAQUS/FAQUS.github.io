@@ -4,20 +4,7 @@
   
     
     <entry>
-      <title>常用配置方便拷贝</title>
-      <link href="/posts/2552.html"/>
-      <url>/posts/2552.html</url>
-      
-        <content type="html"><![CDATA[<h2 id="Maven配置"><a href="#Maven配置" class="headerlink" title="Maven配置"></a>Maven配置</h2><h3 id="阿里云仓库"><a href="#阿里云仓库" class="headerlink" title="阿里云仓库"></a>阿里云仓库</h3><p>setting.xml配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;mirror&gt;</span><br><span class="line">  &lt;id&gt;aliyunmaven&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;mirrorOf&gt;*&lt;&#x2F;mirrorOf&gt;</span><br><span class="line">  &lt;name&gt;阿里云公共仓库&lt;&#x2F;name&gt;</span><br><span class="line">  &lt;url&gt;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;public&lt;&#x2F;url&gt;</span><br><span class="line">&lt;&#x2F;mirror&gt;</span><br></pre></td></tr></table></figure><p>pom.xml配置</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;repository&gt;</span><br><span class="line">  &lt;id&gt;aliyun&lt;&#x2F;id&gt;</span><br><span class="line">  &lt;url&gt;https:&#x2F;&#x2F;maven.aliyun.com&#x2F;repository&#x2F;public&lt;&#x2F;url&gt;</span><br><span class="line">  &lt;releases&gt;</span><br><span class="line">    &lt;enabled&gt;true&lt;&#x2F;enabled&gt;</span><br><span class="line">  &lt;&#x2F;releases&gt;</span><br><span class="line">  &lt;snapshots&gt;</span><br><span class="line">    &lt;enabled&gt;true&lt;&#x2F;enabled&gt;</span><br><span class="line">  &lt;&#x2F;snapshots&gt;</span><br><span class="line">&lt;&#x2F;repository&gt;</span><br></pre></td></tr></table></figure><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>Git常用操作主要是设置签名和生成SSH Key</p><h3 id="Git设置签名"><a href="#Git设置签名" class="headerlink" title="Git设置签名"></a>Git设置签名</h3><p>这个操作是使用Git的第一步操作；区分不同开发人员的身份</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 项目级别/仓库级别：仅当前仓库有效</span></span><br><span class="line">git config user.name  xxxx</span><br><span class="line">git config user.eamil  xxxx@example.com</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 系统用户级别：登录当前操作系统的用户范围</span></span><br><span class="line">git config --global user.name xxx</span><br><span class="line">git cofnig --global user.email xxx@example.com</span><br></pre></td></tr></table></figure><h3 id="SSH-Key"><a href="#SSH-Key" class="headerlink" title="SSH Key"></a>SSH Key</h3><p>生成SSH Key；每次提交就不需要输入账号和密码；</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "your_email@example.com"</span><br></pre></td></tr></table></figure><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">certutil -hashfile fileName md5</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Windows新系统常用配置</title>
+      <title>2021-04-Windows新系统常用配置</title>
       <link href="/posts/63004.html"/>
       <url>/posts/63004.html</url>
       
@@ -30,7 +17,7 @@
     
     
     <entry>
-      <title>Sublime text笔记</title>
+      <title>2021-05-Sublime text笔记</title>
       <link href="/posts/17790.html"/>
       <url>/posts/17790.html</url>
       
@@ -43,7 +30,7 @@
     
     
     <entry>
-      <title>书籍推荐单</title>
+      <title>2021-04-书籍推荐单</title>
       <link href="/posts/61830.html"/>
       <url>/posts/61830.html</url>
       
@@ -124,9 +111,9 @@
             
             <tag> 图床 </tag>
             
-            <tag> GitHub </tag>
-            
             <tag> PicGO </tag>
+            
+            <tag> GitHub </tag>
             
             <tag> Typora </tag>
             
@@ -357,9 +344,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> 图床 </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
