@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://faqus.github.io/"/>
-  <updated>2021-04-23T07:45:42.000Z</updated>
+  <updated>2021-10-31T03:30:40.724Z</updated>
   <id>http://faqus.github.io/</id>
   
   <author>
@@ -17,86 +17,114 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2021-04-Windows新系统常用配置</title>
+    <title>Docker-compose安装，解决网速慢的问题</title>
+    <link href="http://faqus.github.io/posts/14133.html"/>
+    <id>http://faqus.github.io/posts/14133.html</id>
+    <published>2021-10-31T03:10:43.000Z</published>
+    <updated>2021-10-31T03:30:40.724Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Docker-compose"><a href="#Docker-compose" class="headerlink" title="Docker-compose"></a>Docker-compose</h2><p>作用：</p><ul><li>互访问题</li><li>顺序依赖</li></ul><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>国外镜像地址：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure><p>国内镜像地址：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo curl -L https://get.daocloud.io/docker/compose/releases/download/1.24.0/docker-compose-`uname -s`-`uname -m` &gt; /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure><p>赋予执行权限：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod +x /usr/local/bin/docker-compose</span><br></pre></td></tr></table></figure><p>检查安装：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker-compose -version</span><br></pre></td></tr></table></figure><p>如果能够出现版本信息，说明安装没有问题；</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;Docker-compose&quot;&gt;&lt;a href=&quot;#Docker-compose&quot; class=&quot;headerlink&quot; title=&quot;Docker-compose&quot;&gt;&lt;/a&gt;Docker-compose&lt;/h2&gt;&lt;p&gt;作用：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;互访问题&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://FAQUS.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+      <category term="Docker" scheme="http://FAQUS.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows重装系统，一些优化配置，方便工作</title>
     <link href="http://faqus.github.io/posts/63004.html"/>
     <id>http://faqus.github.io/posts/63004.html</id>
     <published>2021-04-24T10:54:20.912Z</published>
-    <updated>2021-04-23T07:45:42.000Z</updated>
+    <updated>2021-10-31T03:15:08.079Z</updated>
     
     <content type="html"><![CDATA[<h2 id="新机配置"><a href="#新机配置" class="headerlink" title="新机配置"></a>新机配置</h2><p>对于新的Windows系统，以下几个设置需要进行调整：</p><ol><li>防火墙关闭</li><li>杀毒软件配置</li><li>电源选项配置</li></ol><h2 id="杀毒软件配置"><a href="#杀毒软件配置" class="headerlink" title="杀毒软件配置"></a>杀毒软件配置</h2><p>首先需要了解自己安装的系统版本，通过按下<code>Windows+R</code>组合键调出运行窗口，输入<code>winver</code>；即可查看具体版本；</p><p>家庭版和专业版的操作是不一样的；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204011466.png" alt="image-20210401204011466"></p><h4 id="专业版"><a href="#专业版" class="headerlink" title="专业版"></a>专业版</h4><p>如果是专业版，</p><ol><li>运行<strong>Windows+R</strong>，输入<code>gpedit.msc</code>回车，</li><li>打开策略组，在策略组定位到在策略组定位到”<strong>计算机配置</strong> &gt;<strong>管理模板</strong> &gt;<strong>Windows组件</strong> &gt;<strong>Windows Defender防病毒程序</strong>“，如下图；</li><li>启用 <strong>关闭Windows Defender 防病毒程序</strong></li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204249737.png" alt=""></p><h4 id="家庭版"><a href="#家庭版" class="headerlink" title="家庭版"></a>家庭版</h4><ol><li><code>Windows+R</code>打开运行，输入<code>“regedit”</code>回车，打开注册表;</li><li>在注册表定位到<strong>HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender</strong></li><li>在右侧将DisableAntiSpyware项的数值改为1</li></ol><p>关于没有该值修改，可以通过以下两种方式：</p><p>方法一：复制：<code>reg add &quot;HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender&quot; /v &quot;DisableAntiSpyware&quot; /d 1 /t REG_DWORD /f</code>命令，在管理员命令提示符窗口中右键点击空白处；</p><p>方法二：在注册表编辑器中新建DisableAntiSpyware的DWORD（32位）值 ，可以彻底禁用Windows10系统的Windows Defender。</p><ol><li>进入注册表编辑器，复制：HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender当HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender注册表路径粘贴到地址栏中后，按下键盘上的回车键，即定位到Windows Defender键，</li><li>在Windows Defender右侧窗口中，右键点击空白处 - 新建 - DWORD（32位）值</li></ol><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/Snipaste_2021-04-08_10-40-22.png" alt="Snipaste_2021-04-08_10-40-22"></p><h2 id="电源配置"><a href="#电源配置" class="headerlink" title="电源配置"></a>电源配置</h2><p>电源配置主要设置睡眠、屏幕熄灭和硬盘；</p><ul><li>关闭盖子不操作，不进入睡眠</li><li>关闭显示器，都设置永不</li></ul><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204714742.png" alt="image-20210401204714742"></p><p>还有一个保护硬盘操作，设置为0就行；</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20210401204912998.png" alt="image-20210401204912998"></p><h2 id="快捷键冲突"><a href="#快捷键冲突" class="headerlink" title="快捷键冲突"></a>快捷键冲突</h2><blockquote><p>Ctrl+Shift+F</p></blockquote><p>微软拼音&gt;按键&gt;热键</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;新机配置&quot;&gt;&lt;a href=&quot;#新机配置&quot; class=&quot;headerlink&quot; title=&quot;新机配置&quot;&gt;&lt;/a&gt;新机配置&lt;/h2&gt;&lt;p&gt;对于新的Windows系统，以下几个设置需要进行调整：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;防火墙关闭&lt;/li&gt;
-&lt;li&gt;杀毒软件配置
-      
+      Windows 10杀毒软件怎么关，Windows10如何关闭自动更新，输入法按键冲突等等新手困扰问题
     
     </summary>
     
     
+      <category term="杂记" scheme="http://FAQUS.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+      <category term="OS" scheme="http://FAQUS.github.io/tags/OS/"/>
     
   </entry>
   
   <entry>
-    <title>2021-05-Sublime text笔记</title>
+    <title>Sublime text一些好用的插件，方便提升工作效率</title>
     <link href="http://faqus.github.io/posts/17790.html"/>
     <id>http://faqus.github.io/posts/17790.html</id>
     <published>2021-04-22T09:46:47.370Z</published>
-    <updated>2021-05-05T02:14:17.713Z</updated>
+    <updated>2021-10-31T03:18:29.379Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Package-Control"><a href="#Package-Control" class="headerlink" title="Package Control"></a>Package Control</h2><p>首先需要安装Package Control；</p><p><code>Tool</code>安装Package Control;</p><p>安装好之后，就可以通过Package Control，安装其他插件。</p><h2 id="插件推荐"><a href="#插件推荐" class="headerlink" title="插件推荐"></a>插件推荐</h2><ul><li>Localization</li></ul><p>本地汉化软件</p><ul><li>ConvertToUTF8</li></ul><p>解决中文乱码问题插件</p><ul><li>Pretty JSON</li></ul><p>美化JSON的插件</p><ul><li>JsFormat</li></ul><p>JS格式化插件</p><ul><li>SidebarEnhancements</li></ul><p>侧边栏神器</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;Package-Control&quot;&gt;&lt;a href=&quot;#Package-Control&quot; class=&quot;headerlink&quot; title=&quot;Package Control&quot;&gt;&lt;/a&gt;Package Control&lt;/h2&gt;&lt;p&gt;首先需要安装Package Cont
-      
+      除了Notepad++;你也是可以选择Sublime Text，JSON优化、JS代码格式化、简易的文件管理。。。。
     
     </summary>
     
     
+      <category term="软件" scheme="http://FAQUS.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+      <category term="Sublime Text" scheme="http://FAQUS.github.io/tags/Sublime-Text/"/>
     
   </entry>
   
   <entry>
-    <title>2021-04-书籍推荐单</title>
+    <title>书籍备忘录</title>
     <link href="http://faqus.github.io/posts/61830.html"/>
     <id>http://faqus.github.io/posts/61830.html</id>
     <published>2021-03-11T13:06:10.129Z</published>
-    <updated>2021-04-01T13:15:10.333Z</updated>
+    <updated>2021-10-31T03:16:25.334Z</updated>
     
     <content type="html"><![CDATA[<h2 id="书籍推荐单"><a href="#书籍推荐单" class="headerlink" title="书籍推荐单"></a>书籍推荐单</h2><h3 id="教育孩子"><a href="#教育孩子" class="headerlink" title="教育孩子"></a>教育孩子</h3><ul><li>《如何说孩子才会听、怎么听孩子才肯说》（How to Talk So Kids Will Listen &amp; Listen So Kids Will Talk）</li><li>《正面管教》（Positive Discipline: The Classic Guide to Helping Children Develop Self-Discipline, Responsibility, Cooperation, and Problem-Solving Skills）</li><li>《去情绪化管教》（No-Drama Discipline: The Whole-Brain Way to Calm the Chaos and Nurture Your Child’s Developing Mind）</li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;书籍推荐单&quot;&gt;&lt;a href=&quot;#书籍推荐单&quot; class=&quot;headerlink&quot; title=&quot;书籍推荐单&quot;&gt;&lt;/a&gt;书籍推荐单&lt;/h2&gt;&lt;h3 id=&quot;教育孩子&quot;&gt;&lt;a href=&quot;#教育孩子&quot; class=&quot;headerlink&quot; title=&quot;教育孩子&quot;
-      
+      收集平时看到的好书，万一、万一以后会看呢？
     
     </summary>
     
     
+      <category term="杂记" scheme="http://FAQUS.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+      <category term="书籍" scheme="http://FAQUS.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
     
   </entry>
   
   <entry>
-    <title>Netflix，一个在大学期间没向家里要过一分钱的平台</title>
+    <title>全世界都在薅Netflix的羊毛，我们国内更疯狂</title>
     <link href="http://faqus.github.io/posts/46195.html"/>
     <id>http://faqus.github.io/posts/46195.html</id>
     <published>2021-03-04T15:47:24.763Z</published>
-    <updated>2021-03-04T15:52:48.000Z</updated>
+    <updated>2021-10-31T03:26:23.704Z</updated>
     
     <content type="html"><![CDATA[<h2 id="个人经历"><a href="#个人经历" class="headerlink" title="个人经历"></a>个人经历</h2><h3 id="接触Netflix"><a href="#接触Netflix" class="headerlink" title="接触Netflix"></a>接触Netflix</h3><blockquote><p>我是在2019年3月份接触到Netflix，当时是为了找一部剧的资源，看到Netflix平台有资源；</p><p>之后又google到Netflix账号可以白嫖，白嫖的方式就是通过不断尝试BIN码试出来Netflix试用账号；这也引出来Netflix第一个阶段吧！</p></blockquote><h2 id="中国人的Netflix"><a href="#中国人的Netflix" class="headerlink" title="中国人的Netflix"></a>中国人的Netflix</h2><h3 id="BIN"><a href="#BIN" class="headerlink" title="BIN"></a>BIN</h3><p>用BIN开Netflix应该算第一批Netflix从业者的方式吧。BIN码其实就是银行卡号的前6位。通过BIN码生成器和检测器，前者生成银行卡号，后者检查银行卡号是否正确。</p><p>然后去Netflix网站注册验证，大量注册试用账号，甚至通过程序批量注册账号。</p><p>然而好景不长，Netflix有检测算法等等升级，BIN码开始不稳定，账号一会就被检测出来失效，那时候各种售后不断。</p><h3 id="BOA"><a href="#BOA" class="headerlink" title="BOA"></a>BOA</h3><p>那些在各大论坛，各种TG群里的BIN码，试了一遍遍还是不通过的时候；大佬们又开始寻找新的路子，BOA卡出来了，其实就是美国银行虚拟卡。</p><blockquote><p>虚拟卡业务在国内比较少见，但是在国外却是非常流行，虚拟卡保护个人隐私啥的。</p></blockquote><p>2019年3月份的时候，也是BOA最火热的时候，BOA前前后后持续了好久；</p><p>期间BOA<strong>4313</strong>卡头也不行，又开发了新的卡头<strong>5532</strong>等等，不过这些都好景不长；</p><p>Netflix开始针对封卡头，从BOA开始之后，无一幸免。每种开头开卡成本不一，有些卡是人家做完其他业务，出售给Netflix开号的商人的，完全属于附加业务。</p><h3 id="Paypal号更稳"><a href="#Paypal号更稳" class="headerlink" title="Paypal号更稳"></a>Paypal号更稳</h3><blockquote><p>论坛：BOA卡头死了，5532稳。。。。 Paypal账号稳。。。<br>淘宝商人：什么开号方式，什么卡头，有Paypal账号吗？</p></blockquote><p>在BOA卡头出事之后，论坛和淘宝商人出现了Paypal号更稳的说法；</p><p>Paypal注册方式也是可以嫖试用的，不过Paypal版本账号也是没过多久，一样被Netflix砍杀干净；</p><p>那时候账号售后比比皆是，有些商家选择跑路，有些商家想售后苦于没账号；要不账号费用太高，那时候应该也是很多人退出这个行当的时候吧。</p><h3 id="“盗”礼品卡"><a href="#“盗”礼品卡" class="headerlink" title="“盗”礼品卡"></a>“盗”礼品卡</h3><p>BOA卡段被封，其他卡断也被封，各种试用不稳。</p><p>其实在BOA火热的时候，Netflix礼品卡一直存在，并且价格非常公道，面值的2折左右吧！无奈那时候BOA太好用了，礼品卡的热潮没有起来，直至BOA卡不行，礼品卡开始火热起来了。</p><p>不过Netflix的方式也开始转变了，从<strong>独享</strong>向<strong>合租车</strong>转变。</p><blockquote><p>以前独享成本很低，如果你可以开BOA或者其他卡头，那几乎零成本；那时候批发淘宝卖家6元左右；当然不排除压价或者同行竞争出货的。</p><p>到礼品卡，成本上来了，方式就需要转变了，独享到合租车。</p></blockquote><h3 id="土耳其礼品卡"><a href="#土耳其礼品卡" class="headerlink" title="土耳其礼品卡"></a>土耳其礼品卡</h3><blockquote><p>正规礼品卡账号，合租47天账号售价28元！市场上又开始流传着这样的广告；</p><p>土耳其当地人多了一份快钱收入，每天去便利店买礼品卡；店门外有专人加价收</p></blockquote><p>土耳其的礼品卡开始在市场火热起来了，Netflix的生意又开始蒸蒸日上了。</p><p>多了一段事件，Netflix也察觉到土耳其地区礼品卡消费惊人的高，土耳其地区败走土耳其。</p><p>泰国等一些东南亚国家，土耳其账号不能观看Netflix。</p><h2 id="现阶段"><a href="#现阶段" class="headerlink" title="现阶段"></a>现阶段</h2><p>土耳其礼品卡还有，阿根廷，巴西也有，还有有卡开的，直接消费金额。</p><p>网站合租，合租群，</p><p>独立卖号已经逐渐没落，做淘宝的Netflix也没以前火热了；</p><p>能坚持下来的，都成长为巨头了；</p><h2 id="唠唠叨叨"><a href="#唠唠叨叨" class="headerlink" title="唠唠叨叨"></a>唠唠叨叨</h2><p>其实中间还有很多可以叨叨的，例如：清cookie；一张BOA卡，开无数个账号；HOB GO香港权力的游戏；HULU、Spotify等等；</p><p>最近看赘婿，郭麒麟在里面说，没有经历过，你写不出精彩的小说。</p><p>去经历，去尝试总是好的！</p>]]></content>
     
     <summary type="html">
     
-      Netflix，一个在大学期间没向家里要过一分钱的平台
+      土耳其便利店，中国黄牛收购Netflix礼品卡，你们的账号可能来源于土耳其，哥伦比亚，巴西。。。。
     
     </summary>
     
@@ -136,9 +164,9 @@
     <link href="http://faqus.github.io/posts/30025.html"/>
     <id>http://faqus.github.io/posts/30025.html</id>
     <published>2020-12-30T14:12:49.666Z</published>
-    <updated>2021-05-05T02:13:31.299Z</updated>
+    <updated>2021-10-31T03:21:35.824Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>目前用的笔记软件越来越不顺手，期间想着换个新的笔记软件；在思考和学习别人经验后，决定以后记录笔记采用云盘共享–Markdown书写方式，不在依托于某个笔记软件，做到自己知识来去自由。</p><p>在研究Typora软件的时候，发现了一个新的姿势，让自己觉得书写更流畅。</p><h2 id="Typora搭配PicGO"><a href="#Typora搭配PicGO" class="headerlink" title="Typora搭配PicGO"></a>Typora搭配PicGO</h2><p>新的姿势就是：Typora上插入图片，自动上传图床，再也不用担心图片丢失，也无需繁琐操作，让自己能够沉浸式书写。</p><h3 id="PicGO搭建图片"><a href="#PicGO搭建图片" class="headerlink" title="PicGO搭建图片"></a>PicGO搭建图片</h3><p>这部分我之前出过文章，介绍如何GitHub + PicGO搭建图片，参考文章：</p><p><a href="https://faqus.github.io/posts/51419.html">https://faqus.github.io/posts/51419.html</a></p><h3 id="Typora偏好配置"><a href="#Typora偏好配置" class="headerlink" title="Typora偏好配置"></a>Typora偏好配置</h3><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//images/image-20201224233927609.png" alt="image-20201224233927609"></p><p>关于上传服务有两种方式：</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//images/image-20201224234030580.png" alt="image-20201224234030580"></p><ul><li>PicGO-Core  命令行方式</li><li>PicGO(app)   可视化界面</li></ul><blockquote><p>PicGO.app和PicGo-Core之间的区别</p><ul><li>目前，PicGo（应用程序）仅中文。</li><li>PicGo.app提供了一个GUI，因此与CLI版本相比更易于设置。</li><li>使用PicGo-Core（命令行）进行上传会消耗较少的计算资源，因为该过程仅在上载过程中运行，并且在上载成功或失败后将退出。通过PicGo.app上传时，PicGo.app将始终保持运行状态，不会自动退出。此外，PicGo.app是电子应用程序，它消耗了更多的计算资源。</li><li>PicGo.app和PicGo-Core使用不同的配置文件，但是您可以将picBedPicGo.app的配置文件中key下的json对象复制到PicGo的配置文件中。</li><li>PicGo.app提供其他功能，例如上传历史记录，自动重命名等。</li></ul></blockquote><p>选择一种方式配置好了，<strong>验证图片上传选项</strong> 测试一下是否成功。如果失败检查一下日志信息。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这次切换笔记记录方式，也思考了很久，主要考虑到笔记记录方式在发生变化，笔记软件本身功能迭代，你也难于预料之后会发生什么。</p><p>还不如回归最原始的文件存储，用最原始的文档格式存储，通过GitHub、网盘方式做到不同设备共享。</p><p>关于检索的问题，可以借助于hexo这种方式，利用hexo的搜索。再一步，文档命名统一规范、目录存储有序。即有力于自己养成好习惯，还能够及时输出给大家，获取大家的意见。</p><p>关于图床的选中，大家可以根据自己的情况，目前我用的是GitHub，搭配了cdn+jsdelivr方式。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>目前用的笔记软件越来越不顺手，期间想着换个新的笔记软件；在思考和学习别人经验后，决定以后记录笔记采用云盘共享–Markdown书写方式，不在依托于某个笔记软件，做到自己知识来去自由。</p><p>在研究Typora软件的时候，发现了一个新的姿势，让自己觉得书写更流畅。</p><h2 id="Typora搭配PicGO"><a href="#Typora搭配PicGO" class="headerlink" title="Typora搭配PicGO"></a>Typora搭配PicGO</h2><p>新的姿势就是：Typora上插入图片，自动上传图床，再也不用担心图片丢失，也无需繁琐操作，让自己能够沉浸式书写。</p><h3 id="PicGO搭建图片"><a href="#PicGO搭建图片" class="headerlink" title="PicGO搭建图片"></a>PicGO搭建图片</h3><p>这部分我之前出过文章，介绍如何GitHub + PicGO搭建图片，参考文章：</p><p><a href="https://faqus.github.io/posts/51419.html">https://faqus.github.io/posts/51419.html</a></p><h3 id="Typora偏好配置"><a href="#Typora偏好配置" class="headerlink" title="Typora偏好配置"></a>Typora偏好配置</h3><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20211031112044263.png" alt="image-20211031112044263"></p><p>关于上传服务有两种方式：</p><p><img src="https://cdn.jsdelivr.net/gh/FAQUS/CDN//img/image-20211031112131595.png" alt="image-20211031112131595"></p><ul><li>PicGO-Core  命令行方式</li><li>PicGO(app)   可视化界面</li></ul><blockquote><p>PicGO.app和PicGo-Core之间的区别</p><ul><li>目前，PicGo（应用程序）仅中文。</li><li>PicGo.app提供了一个GUI，因此与CLI版本相比更易于设置。</li><li>使用PicGo-Core（命令行）进行上传会消耗较少的计算资源，因为该过程仅在上载过程中运行，并且在上载成功或失败后将退出。通过PicGo.app上传时，PicGo.app将始终保持运行状态，不会自动退出。此外，PicGo.app是电子应用程序，它消耗了更多的计算资源。</li><li>PicGo.app和PicGo-Core使用不同的配置文件，但是您可以将picBedPicGo.app的配置文件中key下的json对象复制到PicGo的配置文件中。</li><li>PicGo.app提供其他功能，例如上传历史记录，自动重命名等。</li></ul></blockquote><p>选择一种方式配置好了，<strong>验证图片上传选项</strong> 测试一下是否成功。如果失败检查一下日志信息。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这次切换笔记记录方式，也思考了很久，主要考虑到笔记记录方式在发生变化，笔记软件本身功能迭代，你也难于预料之后会发生什么。</p><p>还不如回归最原始的文件存储，用最原始的文档格式存储，通过GitHub、网盘方式做到不同设备共享。</p><p>关于检索的问题，可以借助于hexo这种方式，利用hexo的搜索。再一步，文档命名统一规范、目录存储有序。即有力于自己养成好习惯，还能够及时输出给大家，获取大家的意见。</p><p>关于图床的选中，大家可以根据自己的情况，目前我用的是GitHub，搭配了cdn+jsdelivr方式。</p>]]></content>
     
     <summary type="html">
     
@@ -367,9 +395,9 @@
       <category term="Hexo" scheme="http://FAQUS.github.io/categories/Hexo/"/>
     
     
-      <category term="图床" scheme="http://FAQUS.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
-    
       <category term="hexo" scheme="http://FAQUS.github.io/tags/hexo/"/>
+    
+      <category term="图床" scheme="http://FAQUS.github.io/tags/%E5%9B%BE%E5%BA%8A/"/>
     
   </entry>
   
